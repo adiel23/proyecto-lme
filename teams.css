@@ -1,0 +1,69 @@
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 5px solid white; /* Default, overridden inline */
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateX(10px);
+}
+
+.team-info {
+    padding: 30px;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), transparent);
+}
+
+.team-info h3 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.team-info p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.car-details {
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item span {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    margin-bottom: 2px;
+}
+
+.detail-item strong {
+    font-size: 0.9rem;
+    color: var(--text-white);
+}
+
+@media (max-width: 768px) {
+    .teams-grid {
+        grid-template-columns: 1fr;
+    }
+}
