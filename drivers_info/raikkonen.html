@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Kimi Räikkönen</title>
+    <link rel="stylesheet" href="../drivers.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page { display: block !important; opacity: 1 !important; visibility: visible !important; position: relative; transform: none !important; max-width: 1200px; margin: 0 auto 30px; background: transparent !important; }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover { background: var(--f1-red); border-color: var(--f1-red); box-shadow: 0 0 20px var(--f1-red); }
+    </style>
+</head>
+<body class="team-alfa">
+    <!-- Imagen de fondo que cubre toda la pantalla -->
+    <img src="../img/pilotos-portada/raikkonen.png" class="driver-bg-image" alt="Background">
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        <div class="driver-page team-alfa">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">Kimi Räikkönen</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+            <div class="video-box">
+                <img src="../img/galaria/kimi-fondo.png" alt="Kimi Räikkönen Presentation">
+            </div>
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/raikkonen.png">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>Kimi Räikkönen</h2>
+                        <p>Legado de Excelencia y Maestría Técnica de Kimi Räikkönen en su Etapa de Consagración</p>
+                        <p>Kimi Räikkönen inició su carrera con un ascenso sin precedentes, saltando casi directamente de la Fórmula Renault a la Fórmula 1 con Sauber en 2001. Su velocidad pura y enfoque pragmático lo llevaron a McLaren y posteriormente a Ferrari, donde alcanzó la gloria máxima al coronarse Campeón Mundial en 2007. Conocido como 'The Iceman' por su inquebrantable resistencia psicológica y precisión técnica bajo presión, Kimi ha sido un referente de longevidad competitiva. En 2021, durante su temporada final con Alfa Romeo Racing, continuó demostrando una lectura de carrera excepcional y una gestión de neumáticos superior que le permitió maximizar resultados en fines de semana complejos. Con 21 victorias y más de 100 podios, Räikkönen deja un legado de integridad competitiva y una comprensión instintiva de la dinámica del monoplaza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/iloa.png" alt="Campeón 2007">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Campeón del Mundo 2007</h4>
+                        <p>Brasil 2007: En un final de infarto, Kimi se corona campeón con Ferrari por un solo punto de diferencia.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/autos/card-kimi1.png" alt="Victoria USA 2018">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Victoria en Austin 2018</h4>
+                        <p>Su último triunfo con Ferrari, demostrando que 'The Iceman' aún tenía la velocidad para vencer a los mejores.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/pilotos-portada/raikkonen.png" alt="Retiro 2021">
+                    </div>
+                    <div class="moment-info">
+                        <h4>El Adiós de una Leyenda</h4>
+                        <p>2021: Kimi pone fin a una carrera legendaria de dos décadas, dejando un vacío irremplazable en el paddock.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

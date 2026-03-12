@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Antonio Giovinazzi</title>
+    <link rel="stylesheet" href="../drivers.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page { display: block !important; opacity: 1 !important; visibility: visible !important; position: relative; transform: none !important; max-width: 1200px; margin: 0 auto 30px; background: transparent !important; }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover { background: var(--f1-red); border-color: var(--f1-red); box-shadow: 0 0 20px var(--f1-red); }
+    </style>
+</head>
+<body class="team-alfa">
+    <!-- Imagen de fondo que cubre toda la pantalla -->
+    <img src="../img/pilotos-portada/giovinazzi.png" class="driver-bg-image" alt="Background">
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        <div class="driver-page team-alfa">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">Antonio Giovinazzi</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+            <div class="video-box">
+                <img src="../img/galaria/pilotos.fondo/presetnacion-2-antonio.png" alt="Antonio Giovinazzi Presentation">
+            </div>
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/giovinazzi.png">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>Antonio Giovinazzi</h2>
+                        <p>Desarrollo Técnica y Disciplina Competitiva de Antonio Giovinazzi en la Estructura de Alfa Romeo</p>
+                        <p>Antonio Giovinazzi inició su trayectoria destacando por una técnica de clasificación refinada que lo llevó a ser subcampeón de la GP2 en 2016. Como pilar del programa de desarrollo de Ferrari, se integró a Alfa Romeo Racing en 2019, donde demostró ser un piloto de gran consistencia y un activo valioso para la evolución técnica del equipo. Durante el ciclo 2021, Giovinazzi destacó por su capacidad para llevar el monoplaza a sesiones finales de clasificación (Q3) y por su ritmo sólido en las fases iniciales de los grandes premios. Su enfoque disciplinado y su feedback técnico preciso han sido fundamentales para la puesta a punto del vehículo en circuitos de variada exigencia aerodinámica. Giovinazzi representa el profesionalismo y la adaptabilidad técnica de la escuela italiana de pilotos en la era moderna de la Fórmula 1.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/antonio2.png" alt="Debut F1">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Debut en Australia</h4>
+                        <p>2017: Giovinazzi debuta de forma inesperada con Sauber, impresionando por su madurez y ritmo constante.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/autos/blanco-crad-2.png" alt="Puntos Monza">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Puntos en Casa</h4>
+                        <p>Monza 2019: Antonio logra puntuar ante su público italiano, un momento de gran orgullo nacional para el piloto.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/pilotos-portada/giovinazzi.png" alt="Clasificación Q3">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Maestro de la Q3</h4>
+                        <p>2021: Varias actuaciones sobresalientes en clasificación llevando el Alfa Romeo al top 10 contra todo pronóstico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

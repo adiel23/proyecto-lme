@@ -1,42 +1,749 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pilotos - F1 2021</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="drivers.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilotos - F1 2021</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="drivers.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="main-nav">
-        <a href="index.html" class="nav-logo">F1 <span>2021</span></a>
-        <div class="menu-toggle">
-            <span></span><span></span><span></span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="drivers.html" class="active">Pilotos</a></li>
-            <li><a href="teams.html">Escuderías</a></li>
-            <li><a href="races.html">Carreras</a></li>
-            <li><a href="tech.html">Tech</a></li>
-            <li><a href="gallery.html">Galería</a></li>
-            <li><a href="creators.html">Creadores</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="bg-grid"></div>
-    <div class="bg-particles">
-        <span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
 
-    <header >
-      
-    </header>
+<nav class="main-nav">
+<a href="index.html" class="nav-logo">F1 <span>2021</span></a>
+<div class="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="drivers.html" class="active">Pilotos</a></li>
+<li><a href="teams.html">Escuderías</a></li>
+<li><a href="races.html">Carreras</a></li>
+<li><a href="tech.html">Tech</a></li>
+<li><a href="gallery.html">Galería</a></li>
+<li><a href="creators.html">Creadores</a></li>
+<li><a href="contact.html">Contacto</a></li>
+</ul>
+</nav>
 
-  
+<div class="bg-grid"></div>
+<div class="bg-particles">
+<span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<section class="drivers-section">
+
+<!-- Controles de navegación del carrusel -->
+<input type="radio" name="drivers-slider" id="pos1" checked>
+<input type="radio" name="drivers-slider" id="pos2">
+<input type="radio" name="drivers-slider" id="pos3">
+<input type="radio" name="drivers-slider" id="pos4">
+<input type="radio" name="drivers-slider" id="pos5">
+<input type="radio" name="drivers-slider" id="pos6">
+<input type="radio" name="drivers-slider" id="pos7">
+<input type="radio" name="drivers-slider" id="pos8">
+<input type="radio" name="drivers-slider" id="pos9">
+<input type="radio" name="drivers-slider" id="pos10">
+<input type="radio" name="drivers-slider" id="pos11">
+<input type="radio" name="drivers-slider" id="pos12">
+<input type="radio" name="drivers-slider" id="pos13">
+<input type="radio" name="drivers-slider" id="pos14">
+<input type="radio" name="drivers-slider" id="pos15">
+<input type="radio" name="drivers-slider" id="pos16">
+<input type="radio" name="drivers-slider" id="pos17">
+
+<div class="drivers-header">
+<h2 class="drivers-title">DRIVERS</h2>
+<div class="drivers-controls">
+<label for="pos2" class="arrow next next-1">&#10095;</label>
+<label for="pos1" class="arrow prev prev-2">&#10094;</label><label for="pos3" class="arrow next next-2">&#10095;</label>
+<label for="pos2" class="arrow prev prev-3">&#10094;</label><label for="pos4" class="arrow next next-3">&#10095;</label>
+<label for="pos3" class="arrow prev prev-4">&#10094;</label><label for="pos5" class="arrow next next-4">&#10095;</label>
+<label for="pos4" class="arrow prev prev-5">&#10094;</label><label for="pos6" class="arrow next next-5">&#10095;</label>
+<label for="pos5" class="arrow prev prev-6">&#10094;</label><label for="pos7" class="arrow next next-6">&#10095;</label>
+<label for="pos6" class="arrow prev prev-7">&#10094;</label><label for="pos8" class="arrow next next-7">&#10095;</label>
+<label for="pos7" class="arrow prev prev-8">&#10094;</label><label for="pos9" class="arrow next next-8">&#10095;</label>
+<label for="pos8" class="arrow prev prev-9">&#10094;</label><label for="pos10" class="arrow next next-9">&#10095;</label>
+<label for="pos9" class="arrow prev prev-10">&#10094;</label><label for="pos11" class="arrow next next-10">&#10095;</label>
+<label for="pos10" class="arrow prev prev-11">&#10094;</label><label for="pos12" class="arrow next next-11">&#10095;</label>
+<label for="pos11" class="arrow prev prev-12">&#10094;</label><label for="pos13" class="arrow next next-12">&#10095;</label>
+<label for="pos12" class="arrow prev prev-13">&#10094;</label><label for="pos14" class="arrow next next-13">&#10095;</label>
+<label for="pos13" class="arrow prev prev-14">&#10094;</label><label for="pos15" class="arrow next next-14">&#10095;</label>
+<label for="pos14" class="arrow prev prev-15">&#10094;</label><label for="pos16" class="arrow next next-15">&#10095;</label>
+<label for="pos15" class="arrow prev prev-16">&#10094;</label><label for="pos17" class="arrow next next-16">&#10095;</label>
+<label for="pos16" class="arrow prev prev-17">&#10094;</label>
+</div>
+</div>
+
+<div class="drivers-wrapper">
+<div class="drivers-row">
+
+<a href="drivers_info/hamilton.html" class="driver-card team-blue">
+<img src="img/pilotos-portada/hamilton.png">
+<h3>Lewis <span>Hamilton</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/bottas.html" class="driver-card team-blue">
+<img src="img/pilotos-portada/bottas.png">
+<h3>Valtteri <span>Bottas</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/verstappen.html" class="driver-card team-azul">
+<img src="img/pilotos-portada/verstappen.png">
+<h3>Max <span>Verstappen</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/perez.html" class="driver-card team-azul">
+<img src="img/pilotos-portada/perez.png">
+<h3>Sergio <span>Pérez</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/leclerc.html" class="driver-card team-red">
+<img src="img/pilotos-portada/leclerc.png">
+<h3>Charles <span>Leclerc</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/sainz.html" class="driver-card team-red">
+<img src="img/pilotos-portada/sainz.png">
+<h3>Carlos <span>Sainz</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/vettel.html" class="driver-card team-green">
+<img src="img/pilotos-portada/vettel.png">
+<h3>Sebastian <span>Vettel</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/stroll.html" class="driver-card team-green">
+<img src="img/pilotos-portada/stroll.png">
+<h3>Lance <span>Stroll</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/norris.html" class="driver-card team-naranja">
+<img src="img/pilotos-portada/norris.jpeg">
+<h3>Lando <span>Norris</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/ricciardo.html" class="driver-card team-naranja">
+<img src="img/pilotos-portada/ricciardo.png">
+<h3>Daniel <span>Ricciardo</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/alonso.html" class="driver-card team-rosado-azul">
+<img src="img/pilotos-portada/alonso.png">
+<h3>Fernando <span>Alonso</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/ocon.html" class="driver-card team-rosado-azul">
+<img src="img/pilotos-portada/ocon.png" >
+<h3>Esteban <span>Ocon</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/gasly.html" class="driver-card team-blanco">
+<img src="img/pilotos-portada/gasly.png">
+<h3>Pierre <span>Gasly</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/tsunoda.html" class="driver-card team-blanco">
+<img src="img/pilotos-portada/tsunoda.png">
+<h3>Yuki <span>Tsunoda</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/raikkonen.html" class="driver-card team-alfa">
+<img src="img/pilotos-portada/raikkonen.png">
+<h3>Kimi <span>Räikkönen</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/giovinazzi.html" class="driver-card team-alfa">
+<img src="img/pilotos-portada/giovinazzi.png">
+<h3>Antonio <span>Giovinazzi</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/schumacher.html" class="driver-card team-blanco">
+<img src="img/pilotos-portada/schumacher.png    ">
+<h3>Mick <span>Schumacher</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/mazepin.html" class="driver-card team-blanco">
+<img src="img/pilotos-portada/mazepin.png">
+<h3>Nikita <span>Mazepin</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/russell.html" class="driver-card team-azul  ">
+<img src="img/pilotos-portada/russell.png">
+<h3>George <span>Russell</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+<a href="drivers_info/latifi.html" class="driver-card team-azul">
+<img src="img/pilotos-portada/latifi.png">
+<h3>Nicholas <span>Latifi</span></h3>
+<span class="driver-btn">Ver biografía</span>
+</a>
+
+</div>
+</div>
+
+<div class="driver-pages">
+
+<label for="driver0" class="back-btn-global">← Volver a pilotos</label>
+
+<!-- ================= DRIVER 1 ================= -->
+<div class="driver-page team-blue">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Lewis Hamilton</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls><source src="vid/todos.mp4" type="video/mp4"></video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/hamilton.png">
+</div>
+<div class="driver-extra-text">
+<h2>Lewis Hamilton</h2>
+<p>Perspectiva Histórica y Análisis del Rendimiento Deportivo de Sir Lewis Hamilton</p>
+<p>Sir Lewis Hamilton inició su trayectoria en el karting (1995), integrándose prematuramente a los programas de McLaren y Mercedes-Benz. Su debut en Fórmula 1 (2007) fue disruptivo, alcanzando el subcampeonato y, posteriormente, su primer título mundial en 2008 como el campeón más joven hasta esa fecha. En 2013, su traslado a Mercedes-AMG inició una era de dominio técnico sin precedentes bajo la normativa híbrida, donde su precisión en clasificación y gestión de componentes le permitieron obtener seis títulos adicionales (2014-2020), igualando el récord histórico de siete campeonatos. El ciclo 2021 destacó por su resiliencia en un duelo intensivo frente a Max Verstappen, periodo en el que Hamilton superó el umbral de las 100 victorias y 100 pole positions. Con 182 podios y el título de Knight Bachelor concedido por la Corona Británica, Hamilton consolidó su legado como el máximo referente estadístico y técnico del automovilismo contemporáneo.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 2 ================= -->
+<div class="driver-page team-blue">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Valtteri Bottas</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls><source src="vid/todos.mp4" type="video/mp4"></video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/bottas.png">
+</div>
+<div class="driver-extra-text">
+<h2>Valtteri Bottas</h2>
+<p>Trayectoria Competitiva y Consolidación Técnica de Valtteri Bottas</p>
+<p>Valtteri Bottas inició su formación en el karting finlandés (1994), estableciendo una base sólida para su ascenso a categorías superiores. Su paso por F2 y F3 resultó en una promoción acelerada hacia la Fórmula 1, debutando en 2013 con Williams-Renault. La asociación con Mercedes desde 2017 posicionó a Bottas como piloto de estructura, acumulando 17 victorias en su estadía con el equipo alemán (2017-2021). Durante el período 2021, Bottas demostró una consistencia estratégica en circuitos de alta velocidad y gestión de neumáticos, consolidándose como referente de estabilidad y fiabilidad técnica. Su incorporación a Alfa Romeo Racing-Ferrari en 2022 le permitió continuar su legado en F1, acumulando más de 60 podios en su carrera y validando su estatus como piloto de élite internacional.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 3 ================= -->
+<div class="driver-page team-azul">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Max Verstappen</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+    <video controls>
+        <source src="vid/max1.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/verstappen.png">
+</div>
+<div class="driver-extra-text">
+<h2>Max Verstappen</h2>
+<p>Max Verstappen debutó en la F1 con solo 17 años...</p>
+<p>Evolución Fenomenológica y Determinismo Competitivo de Max Verstappen
+Max Emilian Verstappen inició su formación en el karting (2003) bajo una metodología de alto rendimiento supervisada por su entorno familiar, logrando un dominio absoluto en categorías internacionales antes de su transición a monoplazas. Su ascenso a la Fórmula 1 en 2015 con Scuderia Toro Rosso resultó estructuralmente disruptivo, al convertirse en el piloto más joven en debutar en la categoría con 17 años, lo que impulsó una reforma en los criterios de licencias de la FIA. Tras su promoción a Red Bull Racing en 2016, consolidó su estatus de élite al obtener la victoria en su Gran Premio de debut en España, estableciendo récords históricos de precocidad en triunfos y podios. El ciclo competitivo 2021 representó su consagración institucional, tras un duelo técnico intensivo que culminó con la obtención de su primer Campeonato Mundial de Pilotos. Al cierre de 2024, Verstappen ha alcanzado la cifra de cuatro títulos mundiales consecutivos y más de 60 victorias, posicionándose como el eje central de la nueva era estadística del automovilismo contemporáneo.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 4 ================= -->
+<div class="driver-page team-azul">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Sergio Pérez</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls><source src="vid/todos.mp4" type="video/mp4"></video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/perez.png">
+</div>
+<div class="driver-extra-text">
+<h2>Sergio Pérez</h2>
+<p>Análisis Competitivo e Impacto Estratégico de Sergio Pérez en la Fórmula 1</p>
+<p>Sergio "Checo" Pérez Rivera inició su carrera en el karting mexicano (1987), desarrollándose como piloto técnico de precisión en categorías inferiores. Su ascenso a la Fórmula 1 en 2011 con Sauber marcó el inicio de una trayectoria caracterizada por habilidades defensivas superiores y gestión táctica bajo presión. Tras su paso por McLaren y Force India (2012-2020), donde acumuló su primera victoria en el Gran Premio de Estambul, Pérez se consolidó como referente de resistencia competitiva. Su incorporación a Red Bull Racing en 2021 le permitió participar como piloto de apoyo estructural durante el duelo entre Verstappen y Hamilton, demostrando madurez estratégica y experiencia de parrilla. Con 25 victorias en su carrera profesional y más de 250 podios potenciales, Pérez representa el paradigma del piloto latinoamericano excepcional en el automovilismo mundial contemporáneo.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 5 ================= -->
+<div class="driver-page team-red">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Charles Leclerc</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls><source src="vid/todos.mp4" type="video/mp4"></video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/leclerc.png">
+</div>
+<div class="driver-extra-text">
+<h2>Charles Leclerc</h2>
+<p>Fenomenología Talentosa y Proyección Competitiva de Charles Leclerc en la Era Moderna</p>
+<p>Charles Jules Leclerc inició su formación en el karting monegasco (1998), siendo patrocinado desde temprana edad por el apoyo estructural de Ferrari. Su ascenso acelerado a través de F4, F3 y F2 evidenció un dominio técnico precoz, mostrando aptitudes excepcionales en clasificación y gestión de presión aerodinámica. El fallecimiento de su padre, Jules Bianchi, piloto de F1, catalalizó su determinación competitiva. Su debut en Fórmula 1 con Sauber (2018) fue espectacular, estableciendo una trayectoria ascendente que culminó en su fichaje por Ferrari en 2019. Durante el ciclo 2021, Leclerc demostró su consolidación como referente técnico del equipo italiano, participando activamente en el desarrollo del monoplaza y acumulando victorias estratégicas. Con más de 5 victorias en su carrera y consistencia en clasificación, Leclerc representa la nueva generación de pilotos de élite capaces de competir al máximo nivel internacional.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 6 ================= -->
+<div class="driver-page team-red">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Carlos Sainz</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls><source src="vid/todos.mp4" type="video/mp4"></video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/sainz.png">
+</div>
+<div class="driver-extra-text">
+<h2>Carlos Sainz</h2>
+<p>Trayectoria Pragmática y Virtuosismo Competitivo de Carlos Sainz en la Fórmula 1 Contemporánea</p>
+<p>Carlos Sainz Vázquez de Castro inició su formación de elite en el karting español (1989), beneficiándose del legado paterno de su padre, bicampeón mundial de rally. Su ascenso metodológico a través de F4, F3 y F2 estableció un patrón de adaptación técnica excepcional a diferentes monoplazas. El debut en Fórmula 1 con Toro Rosso (2015) inauguró una carrera marcada por la consistencia y la capacidad de maximizar el potencial del vehículo, independientemente de su competitividad estructural. Su paso por Renault, McLaren y Ferrari (2021) demostró su versatilidad competitiva y habilidades de adaptación táctica. Durante el período 2021, Sainz se consolidó como piloto de élite mediante la obtención de su primera victoria en Gran Bretaña, validando su estatus técnico y demostrando que su aparente "fortuna competitiva" era resultado de precisión estratégica. Con más de 300 podios potenciales y una carrera en ascenso, Sainz personifica el modelo del piloto versátil y técnicamente completo de la era actual.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 7 ================= -->
+<div class="driver-page team-green">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Sebastian Vettel</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/vettel.png">
+</div>
+<div class="driver-extra-text">
+<h2>Sebastian Vettel</h2>
+<p>Trayectoria Legendaria y Liderazgo Estratégico de Sebastian Vettel en la Fórmula 1</p>
+<p>Sebastian Vettel inició su formación en el karting alemán (1995), demostrando una precocidad técnica que lo llevó a ser parte del programa de jóvenes pilotos de Red Bull. Su ascenso meteórico culminó con su debut en 2007, convirtiéndose en el piloto más joven en puntuar en ese momento. Tras su victoria histórica con Toro Rosso en Monza 2008, Vettel ascendió a Red Bull Racing, donde estableció un dominio absoluto entre 2010 y 2013, obteniendo cuatro títulos mundiales consecutivos y rompiendo múltiples récords de precocidad. Su paso por Ferrari (2015-2020) consolidó su estatus como uno de los grandes de la historia, logrando 14 victorias con la Scuderia. En 2021, Vettel se unió a Aston Martin para liderar el ambicioso proyecto del equipo británico, aportando su vasta experiencia técnica y visión estratégica. Con más de 50 victorias y 120 podios, Vettel personifica la excelencia competitiva y el compromiso con la evolución técnica del deporte.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 8 ================= -->
+<div class="driver-page team-green">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Lance Stroll</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/stroll.png">
+</div>
+<div class="driver-extra-text">
+<h2>Lance Stroll</h2>
+<p>Evolución Técnica y Consistencia Competitiva de Lance Stroll en la Parrilla de Élite</p>
+<p>Lance Stroll inició su carrera en el karting internacional (2008), respaldado por un riguroso programa de desarrollo que lo llevó a dominar la Fórmula 3 Europea en 2016. Su debut en Fórmula 1 con Williams en 2017 fue histórico, convirtiéndose en el piloto más joven en lograr un podio en su temporada de novato en el GP de Azerbaiyán. Tras su paso por Racing Point, donde demostró habilidades excepcionales en condiciones de lluvia logrando una pole position en Turquía 2020, Stroll se integró al proyecto de Aston Martin en 2021. Durante este período, ha demostrado una notable madurez táctica y una capacidad constante para maximizar el rendimiento del monoplaza en situaciones de carrera complejas. Con múltiples podios y una trayectoria de crecimiento sostenido, Stroll representa la perseverancia técnica y la adaptabilidad necesaria para competir en el máximo nivel del automovilismo mundial.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 9 ================= -->
+<div class="driver-page team-naranja">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Lando Norris</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls><source src="vid/todos.mp4" type="video/mp4"></video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/norris.jpeg">
+</div>
+<div class="driver-extra-text">
+<h2>Lando Norris</h2>
+<p>Precosidad Técnica y Potencial de Lando Norris como Generación Emergente de Fórmula 1</p>
+<p>Lando Norris inició su formación en el prestigioso karting británico (1999), demostrando aptitudes excepcionales que lo diferenciaron entre sus contemporáneos. Su paso rápido a través de F4, F3 y F2 evidenció un dominio técnico y mental precoz, obteniendo el campeonato de F3 y consolidándose como prospecto de élite para categorías superiores. Su debut en Fórmula 1 con McLaren-Renault (2019) a los 19 years posicionó a Norris como joven piloto de potencial excepcional, mostrando velocidad pura y adaptación acelerada a la complejidad de la F1. Durante el ciclo 2021, Norris acumuló experiencia estratégica y técnica consistente, participando activamente en el desarrollo competitivo de McLaren durante su fase de recuperación. Su capacidad de precisión en clasificación, gestión de neumáticos y conocimiento técnico del monoplaza lo proyectan como posible futuro campeón mundial durante la próxima década de la categoría.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 10 ================= -->
+<div class="driver-page team-naranja">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Daniel Ricciardo</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls><source src="vid/todos.mp4" type="video/mp4"></video>
+</div>
++
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/ricciardo.png">
+</div>
+<div class="driver-extra-text">
+<h2>Daniel Ricciardo</h2>
+<p>Legado Competitivo y Trayectoria Resiliente de Daniel Ricciardo en la Fórmula 1</p>
+<p>Daniel Ricciardo inició su formación en el karting australiano (1987), estableciendo una base técnica sólida bajo un programa estructurado de desarrollo de talentos. Su ascenso a F3 y F2 evidenció aptitudes excepcionales en manejo defensivo y resistencia psicológica bajo presión. El debut en Fórmula 1 con HRT (2011) marcó el inicio de una trayectoria ascendente que consolidó su estatus técnico tras su transformación en Toro Rosso y Red Bull Racing, donde acumuló 7 victorias (2014-2018) durante su asociación con el equipo austriaco. Su paso por Renault y McLaren (2019-2021) demostró su capacidad de adaptación técnica a diferentes filosofías de monoplaza y estructuras competitivas. Durante el período 2021, Ricciardo continuó su trayectoria como piloto experimentado, aportando estabilidad técnica y mentalidad ganadora a McLaren. Con más de 30 victorias, 200 podios y una carrera extendida de excelencia, Ricciardo personifica la resiliencia competitiva y la adaptabilidad técnica de un piloto de élite internacional.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 11 ================= -->
+<div class="driver-page team-rosado-azul">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Fernando Alonso</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/alonso.png">
+</div>
+<div class="driver-extra-text">
+<h2>Fernando Alonso</h2>
+<p>Virtuosismo Técnico y Legado Histórico de Fernando Alonso en su Regreso a la Fórmula 1</p>
+<p>Fernando Alonso inició su formación en el karting español (1984), estableciendo una base técnica insuperable que lo llevó a debutar en F1 con Minardi en 2001. Su ascenso con Renault cambió la historia del deporte al destronar a Michael Schumacher y obtener dos títulos mundiales consecutivos (2005-2006). Tras etapas icónicas en McLaren y Ferrari, donde demostró ser capaz de llevar cualquier monoplaza más allá de sus límites teóricos, Alonso se tomó un receso de la categoría para conquistar las 24 Horas de Le Mans y el Mundial de Resistencia. Su regreso en 2021 con Alpine (antes Renault) marcó un hito de longevidad y vigencia competitiva, demostrando en circuitos como Hungría una lectura estratégica y defensiva superior. Con más de 30 victorias y 100 podios, Alonso personifica la inteligencia táctica y la pasión incombustible por la perfección técnica en pista.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 12 ================= -->
+<div class="driver-page team-rosado-azul">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Esteban Ocon</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/ocon.png">
+</div>
+<div class="driver-extra-text">
+<h2>Esteban Ocon</h2>
+<p>Precisión Táctica y Resiliencia Competitiva de Esteban Ocon en la Élite del Automovilismo</p>
+<p>Esteban Ocon inició su trayectoria en el karting francés (2006), forjando un camino basado en el talento puro y la determinación. Tras dominar la F3 Europea y la GP3, debutó en F1 en 2016, consolidándose rápidamente como un piloto de extrema fiabilidad y ritmo constante. Su paso por Force India y su posterior integración a Renault/Alpine en 2020 evidenciaron su capacidad para trabajar en estructuras de fábrica y desarrollar monoplazas complejos. El punto culminante de su carrera llegó en 2021 con su histórica victoria en el Gran Premio de Hungría, donde demostró una resistencia psicológica excepcional bajo la presión de los líderes mundiales. Ocon representa el modelo de piloto metódico y disciplined, capaz de capitalizar cada oportunidad estratégica para entregar resultados de alto valor para su equipo.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 13 ================= -->
+<div class="driver-page team-blanco">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Pierre Gasly</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/gasly.png">
+</div>
+<div class="driver-extra-text">
+<h2>Pierre Gasly</h2>
+<p>Consolidación Técnica y Liderazgo Estratégico de Pierre Gasly en el Proyecto AlphaTauri</p>
+<p>Pierre Gasly inició su formación en el karting internacional (2006), destacando por una velocidad pura que lo llevó a ganar la GP2 Series en 2016. Su trayectoria en Fórmula 1 ha estado marcada por una resiliencia ejemplar; tras un breve paso por Red Bull Racing, regresó a Toro Rosso/AlphaTauri para convertirse en el líder absoluto de la estructura italiana. Su victoria histórica en Monza 2020 y su consistencia durante el ciclo 2021 lo posicionaron como uno de los pilotos más efectivos de la zona media, destacando por sus actuaciones en clasificación y su gestión impecable del ritmo de carrera. Gasly ha demostrado una capacidad única para extraer el máximo potencial técnico de su monoplaza, consolidando su estatus como un piloto de élite capaz de luchar por los puestos de vanguardia de forma recurrente.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 14 ================= -->
+<div class="driver-page team-blanco">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Yuki Tsunoda</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/tsunoda.png">
+</div>
+<div class="driver-extra-text">
+<h2>Yuki Tsunoda</h2>
+<p>Proyección Técnica y Evolución Adaptativa de Yuki Tsunoda en su Temporada de Debut</p>
+<p>Yuki Tsunoda inició su ascenso meteórico en el automovilismo japonés (2016), respaldado por el programa de jóvenes pilotos de Honda y Red Bull. Su transición a Europa fue disruptiva, logrando resultados sobresalientes en F3 y F2 que le permitieron debutar en Fórmula 1 con AlphaTauri en 2021 a los 20 años. Durante su temporada de novato, Tsunoda exhibió destellos de una velocidad natural extraordinaria, especialmente en sectores de alta complejidad técnica, mientras atravesaba un proceso intensivo de adaptación a la gestión de sistemas híbridos y neumáticos. Su progresión a lo largo del año mostró una maduración táctica significativa y una mejora constante en la comunicación técnica con el muro de boxes. Tsunoda representa the nueva generación de talento japonés, enfocada en la precisión y el desarrollo de habilidades competitivas al más alto nivel internacional.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 15 ================= -->
+<div class="driver-page team-alfa">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Kimi Räikkönen</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/raikkonen.png">
+</div>
+<div class="driver-extra-text">
+<h2>Kimi Räikkönen</h2>
+<p>Legado de Excelencia y Maestría Técnica de Kimi Räikkönen en su Etapa de Consagración</p>
+<p>Kimi Räikkönen inició su carrera con un ascenso sin precedentes, saltando casi directamente de la Fórmula Renault a la Fórmula 1 con Sauber in 2001. Su velocidad pura y enfoque pragmático lo llevaron a McLaren y posteriormente a Ferrari, donde alcanzó la gloria máxima al coronarse Campeón Mundial en 2007. Conocido como 'The Iceman' por su inquebrantable resistencia psicológica y precisión técnica bajo presión, Kimi ha sido un referente de longevidad competitiva. En 2021, durante su temporada final con Alfa Romeo Racing, continuó demostrando una lectura de carrera excepcional y una gestión de neumáticos superior que le permitió maximizar resultados en fines de semana complejos. Con 21 victorias y más de 100 podios, Räikkönen deja un legado de integridad competitiva y una comprensión instintiva de la dinámica del monoplaza.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 16 ================= -->
+<div class="driver-page team-alfa">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Antonio Giovinazzi</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/giovinazzi.png">
+</div>
+<div class="driver-extra-text">
+<h2>Antonio Giovinazzi</h2>
+<p>Desarrollo Técnica y Disciplina Competitiva de Antonio Giovinazzi en la Estructura de Alfa Romeo</p>
+<p>Antonio Giovinazzi inició su trayectoria destacando por una técnica de clasificación refinada que lo llevó a ser subcampeón de la GP2 en 2016. Como pilar del programa de desarrollo de Ferrari, se integró a Alfa Romeo Racing en 2019, donde demostró ser un piloto de gran consistencia y un activo valioso para la evolución técnica del equipo. Durante el ciclo 2021, Giovinazzi destacó por su capacidad para llevar el monoplaza a sesiones finales de clasificación (Q3) y por su ritmo sólido en las fases iniciales de los grandes premios. Su enfoque disciplinado y su feedback técnico preciso han sido fundamentales para la puesta a punto del vehículo en circuitos de variada exigencia aerodinámica. Giovinazzi representa el profesionalismo y la adaptabilidad técnica de la escuela italiana de pilotos en la era moderna de la Fórmula 1.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 17 ================= -->
+<div class="driver-page team-haas">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Mick Schumacher</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/schumacher.png">
+</div>
+<div class="driver-extra-text">
+<h2>Mick Schumacher</h2>
+<p>Evolución Metódica y Legado Competitivo de Mick Schumacher en su Ingreso a la Fórmula 1</p>
+<p>Mick Schumacher inició su formación bajo un escrutinio mediático sin precedentes, respondiendo con un enfoque metódico y una ética de trabajo excepcional que lo llevó a ser campeón de la Fórmula 3 Europea y la Fórmula 2. Su debut en 2021 con el equipo Haas representó un año de aprendizaje estructural en una temporada enfocada enteramente en el desarrollo futuro. Schumacher demostró una capacidad notable para gestionar la degradación de neumáticos y mantener ritmos consistentes en condiciones de carrera difíciles, superando regularmente a su compañero de equipo y mostrando una madurez táctica impropia de un novato. Su integración técnica con el equipo y su crecimiento constante a lo largo de las 22 carreras del calendario cimentaron las bases de su trayectoria profesional, honrando un legado histórico con resultados basados en el esfuerzo y la precisión técnica.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 18 ================= -->
+<div class="driver-page team-haas">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Nikita Mazepin</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/mazepin.png">
+</div>
+<div class="driver-extra-text">
+<h2>Nikita Mazepin</h2>
+<p>Adaptación Técnica y Desafíos Competitivos de Nikita Mazepin en la Temporada 2021</p>
+<p>Nikita Mazepin inició su carrera en el karting internacional, progresando a través de la GP3 y la Fórmula 2 donde obtuvo victorias que validaron su ascenso a la máxima categoría. En 2021, se unió al equipo Haas para su temporada de debut, enfrentando la complejidad de un monoplaza con limitaciones aerodinámicas significativas en un año de transición para la escudería. Durante este período, Mazepin se enfocó en comprender la dinámica de fluidos y el comportamiento de los neumáticos Pirelli en tandas largas, trabajando intensamente en la comunicación con sus ingenieros para mejorar la estabilidad del vehículo. Su trayectoria estuvo marcada por un proceso de aprendizaje continuo y la búsqueda de consistencia en circuitos de alta exigencia física, contribuyendo con datos técnicos valiosos para el programa de desarrollo a largo plazo del equipo estadounidense.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 19 ================= -->
+<div class="driver-page team-williams">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">George Russell</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/russell.png">
+</div>
+<div class="driver-extra-text">
+<h2>George Russell</h2>
+<p>Excelencia Técnica y Liderazgo Emergente de George Russell en la Estructura de Williams</p>
+<p>George Russell inició su formación dominando las categorías de promoción, ganando los títulos de GP3 y Fórmula 2 en años consecutivos. Su debut en F1 con Williams en 2019 reveló a un piloto de una precisión quirúrgica en clasificación, ganándose el apodo de 'Mr. Saturday'. El ciclo 2021 fue su consagración, logrando actuaciones históricas como la P2 en la clasificación del GP de Bélgica bajo condiciones extremas de lluvia, lo que le otorgó su primer podio en la categoría. Russell ha demostrado ser un líder técnico capaz de elevar el rendimiento de un monoplaza limitado, aportando una visión estratégica y una velocidad pura que lo llevaron a su eventual fichaje por Mercedes. Su capacidad para gestionar la presión y su conocimiento profundo de la dinámica vehicular lo posicionan como uno de los pilares del futuro de la Fórmula 1.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DRIVER 20 ================= -->
+<div class="driver-page team-williams">
+<div class="driver-presenter">
+<h1 class="driver-presenter-name">Nicholas Latifi</h1>
+<p class="driver-presenter-role">DRIVER PRESENTATION</p>
+</div>
+
+<div class="video-box">
+<video controls>
+<source src="vid/todos.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="driver-extra-info">
+<div class="driver-extra-container">
+<div class="driver-extra-img">
+<img src="img/pilotos-portada/latifi.png">
+</div>
+<div class="driver-extra-text">
+<h2>Nicholas Latifi</h2>
+<p>Consistencia Táctica y Aporte Técnico de Nicholas Latifi en la Recuperación de Williams</p>
+<p>Nicholas Latifi inició su carrera competitiva en el karting canadiense, consolidando su técnica a través de varias temporadas en la Fórmula 2 donde logró el subcampeonato en 2019. Su debut en Fórmula 1 en 2020 coincidió con un período de reestructuración profunda en Williams Racing. Durante la temporada 2021, Latifi demostró ser un piloto de gran fiabilidad, logrando sus primeros puntos en la categoría en el caótico GP de Hungría y manteniendo una consistencia notable en el ritmo de carrera. Su enfoque se ha centrado en el trabajo de puesta a punto y en proporcionar un feedback técnico detallado que ha sido crucial para la evolución del chasis Williams. Latifi representa la perseverancia y el trabajo en equipo, elementos esenciales para el progreso de una escudería en la competitiva zona media de la parrilla mundial.</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
 
     <footer class="main-footer">
         <div class="footer-grid">
@@ -44,7 +751,7 @@
                 <h3>CREADORES</h3>
                 <ul class="footer-list">
                     <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
-                    <li><span class="creator-badge">Design</span> Azael</li>
+                    <li><span class="creator-badge">Design</span> Asael</li>
                     <li><span class="creator-badge">Content</span> Arthur</li>
                     <li><span class="creator-badge">Creator</span> Victor</li>
                 </ul>
@@ -52,7 +759,7 @@
             <div class="footer-col">
                 <h3>LEGAL</h3>
                 <p>&copy; 2026 F1 2021 Tribute.</p>
-                <p class="disclaimer">Este sitio es un proyecto de fans. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
             </div>
             <div class="footer-col">
                 <h3>CONÉCTATE</h3>
@@ -68,8 +775,13 @@
         </div>
         <div class="footer-bar">
             <div class="pulse-dot"></div>
-            <p>Hecho con <span style="color: var(--f1-red);">❤</span> y velocidad.</p>
+            <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
         </div>
     </footer>
+
 </body>
 </html>
+
+
+
+

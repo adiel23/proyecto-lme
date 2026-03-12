@@ -10,20 +10,56 @@
     overflow: hidden;
 }
 
-.hero-section::before {
-    content: '';
+/* VIDEO BACKGROUND HERO */
+.hero-video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(225, 6, 0, 0.1) 0%, rgba(11, 12, 16, 1) 70%);
-    animation: pulseBg 5s infinite alternate;
+    z-index: -5; /* Muy atrás para no tapar nada */
+    overflow: hidden;
+}
+
+.hero-bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8; /* Más opacidad para que se vea bien */
+    filter: brightness(40%) contrast(110%);
+    position: absolute; /* Ahora solo se queda en la cabecera, no en el cuerpo */
+    top: 0;
+    left: 0;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 20%, rgba(11, 12, 16, 0.9) 100%);
+    z-index: 1;
+}
+
+/* Ajustar partículas y grid para que no tapen el video si se desea */
+.bg-grid, .bg-particles {
+    pointer-events: none;
+}
+
+/* Eliminar el gradiente anterior que estorbaba */
+.hero-section::before {
+    display: none;
 }
 
 @keyframes pulseBg {
     0% { opacity: 0.5; }
     100% { opacity: 1; }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
 }
 
 h1.glitch {

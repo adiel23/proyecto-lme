@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - George Russell</title>
+    <link rel="stylesheet" href="../drivers.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page { display: block !important; opacity: 1 !important; visibility: visible !important; position: relative; transform: none !important; max-width: 1200px; margin: 0 auto 30px; background: transparent !important; }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover { background: var(--f1-red); border-color: var(--f1-red); box-shadow: 0 0 20px var(--f1-red); }
+    </style>
+</head>
+<body class="team-williams">
+    <!-- Imagen de fondo que cubre toda la pantalla -->
+    <img src="../img/pilotos-portada/russell.png" class="driver-bg-image" alt="Background">
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        <div class="driver-page team-williams">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">George Russell</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+            <div class="video-box">
+                <img src="../img/galaria/autos/george-rusell.png" alt="George Russell Presentation">
+            </div>
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/russell.png">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>George Russell</h2>
+                        <p>Excelencia Técnica y Liderazgo Emergente de George Russell en la Estructura de Williams</p>
+                        <p>George Russell inició su formación dominando las categorías de promoción, ganando los títulos de GP3 y Fórmula 2 en años consecutivos. Su debut en F1 con Williams en 2019 reveló a un piloto de una precisión quirúrgica en clasificación, ganándose el apodo de 'Mr. Saturday'. El ciclo 2021 fue su consagración, logrando actuaciones históricas como la P2 en la clasificación del GP de Bélgica bajo condiciones extremas de lluvia, lo que le otorgó su primer podio en la categoría. Russell ha demostrado ser un líder técnico capaz de elevar el rendimiento de un monoplaza limitado, aportando una visión estratégica y una velocidad pura que lo llevaron a su eventual fichaje por Mercedes. Su capacidad para gestionar la presión y su conocimiento profundo de la dinámica vehicular lo posicionan como uno de los pilares del futuro de la Fórmula 1.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/casco/azul.jpeg" alt="P2 Spa">
+                    </div>
+                    <div class="moment-info">
+                        <h4>P2 Histórica en Spa</h4>
+                        <p>Bélgica 2021: Russell logra una clasificación legendaria bajo la lluvia, poniendo su Williams en primera fila y logrando su primer podio.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/carro-azul-1.jpeg" alt="Debut Mercedes">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Sustitución en Sakhir</h4>
+                        <p>2020: George debuta con Mercedes sustituyendo a Hamilton, liderando gran parte de la carrera y asombrando al mundo.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/pilotos-portada/russell.png" alt="Puntos Williams">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Primeros Puntos con Williams</h4>
+                        <p>Hungría 2021: Un momento de pura emoción al lograr sus primeros puntos para el equipo tras años de trabajo duro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

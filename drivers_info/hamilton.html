@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Lewis Hamilton</title>
+    <link rel="stylesheet" href="../drivers.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            position: relative;
+            transform: none !important;
+            max-width: 1200px;
+            margin: 0 auto 30px;
+            background: transparent !important;
+        }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover {
+            background: var(--f1-red);
+            border-color: var(--f1-red);
+            box-shadow: 0 0 20px var(--f1-red);
+        }
+
+        /* Estilos para el video de fondo exclusivo */
+        .driver-bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            object-fit: cover;
+            opacity: 0.6;
+            filter: brightness(70%);
+        }
+
+        .driver-bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.6) 100%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="team-blue">
+    <!-- Video de fondo exclusivo -->
+    <video autoplay muted loop playsinline class="driver-bg-video">
+        <source src="../vid/edit-lewis.mp4" type="video/mp4">
+    </video>
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        
+        <div class="driver-page team-blue">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">Lewis Hamilton</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+
+            <div class="video-box">
+                <video controls loop><source src="../vid/lewia-presentacion.mp4" type="video/mp4"></video>
+            </div>
+
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/hamilton.png">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>Lewis Hamilton</h2>
+                        <p>Perspectiva Histórica y Análisis del Rendimiento Deportivo de Sir Lewis Hamilton</p>
+                        <p>Sir Lewis Hamilton inició su trayectoria en el karting (1995), integrándose prematuramente a los programas de McLaren y Mercedes-Benz. Su debut en Fórmula 1 (2007) fue disruptivo, alcanzando el subcampeonato y, posteriormente, su primer título mundial en 2008 como el campeón más joven hasta esa fecha. En 2013, su traslado a Mercedes-AMG inició una era de dominio técnico sin precedentes bajo la normativa híbrida, donde su precisión en clasificación y gestión de componentes le permitieron obtener seis títulos adicionales (2014-2020), igualando el récord histórico de siete campeonatos. El ciclo 2021 destacó por su resiliencia en un duelo intensivo frente a Max Verstappen, periodo en el que Hamilton superó el umbral de las 100 victorias y 100 pole positions. Con 182 podios y el título de Knight Bachelor concedido por la Corona Británica, Hamilton consolidó su legado como el máximo referente estadístico y técnico del automovilismo contemporáneo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nueva sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/campeon.lewia.png" alt="Campeonato 2008"> <!-- Reemplazar con imagen real -->
+                    </div>
+                    <div class="moment-info">
+                        <h4>Primer Título Mundial</h4>
+                        <p>Interlagos 2008: Una de las finales más dramáticas de la historia, decidida en la última curva.</p>
+                    </div>
+                </div>
+
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/lewis.jpeg" alt="Fichaje Mercedes"> <!-- Reemplazar con imagen real -->
+                    </div>
+                    <div class="moment-info">
+                        <h4>Era de Dominio Mercedes</h4>
+                        <p>2014: El inicio de una unión histórica que resultaría en 6 títulos mundiales adicionales.</p>
+                    </div>
+                </div>
+
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/brasil.lewia.png" alt="Victoria 100"> <!-- Reemplazar con imagen real -->
+                    </div>
+                    <div class="moment-info">
+                        <h4>Hito de las 100 Victorias</h4>
+                        <p>Rusia 2021: Hamilton se convierte en el primer piloto en alcanzar las 100 victorias en F1.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+

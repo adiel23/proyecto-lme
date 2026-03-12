@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Carlos Sainz</title>
+    <link rel="stylesheet" href="../drivers.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page { display: block !important; opacity: 1 !important; visibility: visible !important; position: relative; transform: none !important; max-width: 1200px; margin: 0 auto 30px; background: transparent !important; }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover { background: var(--f1-red); border-color: var(--f1-red); box-shadow: 0 0 20px var(--f1-red); }
+    </style>
+</head>
+<body class="team-red">
+    <!-- Imagen de fondo que cubre toda la pantalla -->
+    <img src="../img/pilotos-portada/sainz.png" class="driver-bg-image" alt="Background">
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        <div class="driver-page team-red">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">Carlos Sainz</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+            <div class="video-box">
+                <video controls loop><source src="../vid/ferari-2.mp4" type="video/mp4"></video>
+            </div>
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/sainz.png">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>Carlos Sainz</h2>
+                        <p>Trayectoria Pragmática y Virtuosismo Competitivo de Carlos Sainz en la Fórmula 1 Contemporánea</p>
+                        <p>Carlos Sainz Vázquez de Castro inició su formación de elite en el karting español (1989), beneficiándose del legado paterno de su padre, bicampeón mundial de rally. Su ascenso metodológico a través de F4, F3 y F2 estableció un patrón de adaptación técnica excepcional a diferentes monoplazas. El debut en Fórmula 1 con Toro Rosso (2015) inauguró una carrera marcada por la consistencia y la capacidad de maximizar el potencial del vehículo, independientemente de su competitividad estructural. Su paso por Renault, McLaren y Ferrari (2021) demostró su versatilidad competitiva y habilidades de adaptación táctica. Durante el período 2021, Sainz se consolidó como piloto de élite mediante la obtención de su primera victoria en Gran Bretaña, validando su estatus técnico y demostrando que su aparente "fortuna competitiva" era resultado de precisión estratégica. Con más de 300 podios potenciales y una carrera en ascenso, Sainz personifica el modelo del piloto versátil y técnicamente completo de la era actual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/pilotos.fondo/ferrari-2.png" alt="Podio Brasil">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Primer Podio en F1</h4>
+                        <p>Brasil 2019: Una remontada espectacular desde la última posición hasta el podio con McLaren, confirmando su talento.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/ferrari.png" alt="Fichaje Ferrari">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Llegada a la Scuderia</h4>
+                        <p>2021: Su primer año con Ferrari donde demostró una adaptación asombrosa, superando las expectativas iniciales.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/autos/ferrari2.png" alt="Podio Mónaco">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Podio en Mónaco 2021</h4>
+                        <p>Su primer podio vestido de rojo en las calles del Principado, marcando el inicio de una era exitosa con Ferrari.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+

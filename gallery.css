@@ -1,0 +1,194 @@
+/* ===== GALLERY STYLES REDESIGN ===== */
+
+/* SECCIONES */
+.gallery-section {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-row {
+    margin-bottom: 80px;
+}
+
+/* TÍTULO DE SECCIÓN */
+.gallery-section-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--text-white);
+    display: inline-block;
+    position: relative;
+}
+
+.gallery-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--f1-red);
+    transition: width 0.3s ease;
+}
+
+.gallery-row:hover .gallery-section-title::after {
+    width: 100%;
+}
+
+/* SEPARADOR */
+.gallery-separator {
+    height: 1px;
+    background: linear-gradient(90deg, var(--f1-red), transparent);
+    margin-bottom: 40px;
+    opacity: 0.3;
+}
+
+/* GRID COMPACTO (5 COLUMNAS) */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px; /* Menos espacio para que se vea más compacto */
+}
+
+/* TARJETA DE IMAGEN */
+.gallery-item {
+    position: relative;
+    aspect-ratio: 1 / 1; /* Cuadrado para mayor uniformidad */
+    overflow: hidden;
+    border-radius: 8px; /* Bordes más sutiles */
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item > a:not(.close-btn):not(.fullscreen-btn) {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+    border-color: var(--f1-red);
+    z-index: 10;
+}
+
+/* IMAGEN INTERNA */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    filter: brightness(0.8) grayscale(20%);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(1) grayscale(0);
+}
+
+/* CAPTION OCULTO (ELIMINADO POR PETICIÓN) */
+.gallery-caption {
+    display: none;
+}
+
+/* BOTÓN FULLSCREEN OCULTO (ELIMINADO POR PETICIÓN) */
+.fullscreen-btn {
+    display: none !important;
+}
+
+/* BOTÓN CERRAR (FULLSCREEN) */
+.close-btn {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    z-index: 10001;
+    background: var(--f1-red);
+    width: 45px;
+    height: 45px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* ESTADO FULLSCREEN (:target) */
+.gallery-item:target {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: rgba(0,0,0,0.98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    cursor: default;
+    border: none;
+    transform: none;
+}
+
+.gallery-item:target img {
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    filter: none;
+    border-radius: 4px;
+    box-shadow: 0 0 50px rgba(0,0,0,1);
+}
+
+.gallery-item:target .close-btn {
+    display: flex;
+}
+
+.gallery-item:target .fullscreen-btn,
+.gallery-item:target .gallery-caption {
+    display: none;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .gallery-section-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-section {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .gallery-caption {
+        font-size: 0.65rem;
+    }
+}

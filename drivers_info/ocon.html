@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Esteban Ocon</title>
+    <link rel="stylesheet" href="../drivers.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page { display: block !important; opacity: 1 !important; visibility: visible !important; position: relative; transform: none !important; max-width: 1200px; margin: 0 auto 30px; background: transparent !important; }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover { background: var(--f1-red); border-color: var(--f1-red); box-shadow: 0 0 20px var(--f1-red); }
+    </style>
+</head>
+<body class="team-rosado-azul">
+    <!-- Imagen de fondo que cubre toda la pantalla -->
+    <img src="../img/pilotos-portada/ocon.png" class="driver-bg-image" alt="Background">
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        <div class="driver-page team-rosado-azul">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">Esteban Ocon</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+            <div class="video-box">
+                <img src="../img/pilotos-portada/estebann.jpeg" alt="Esteban Ocon Presentation">
+            </div>
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/ocon.png">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>Esteban Ocon</h2>
+                        <p>Precisión Táctica y Resiliencia Competitiva de Esteban Ocon en la Élite del Automovilismo</p>
+                        <p>Esteban Ocon inició su trayectoria en el karting francés (2006), forjando un camino basado en el talento puro y la determinación. Tras dominar la F3 Europea y la GP3, debutó en F1 en 2016, consolidándose rápidamente como un piloto de extrema fiabilidad y ritmo constante. Su paso por Force India y su posterior integración a Renault/Alpine en 2020 evidenciaron su capacidad para trabajar en estructuras de fábrica y desarrollar monoplazas complejos. El punto culminante de su carrera llegó en 2021 con su histórica victoria en el Gran Premio de Hungría, donde demostró una resistencia psicológica excepcional bajo la presión de los líderes mundiales. Ocon representa el modelo de piloto metódico y disciplinado, capaz de capitalizar cada oportunidad estratégica para entregar resultados de alto valor para su equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/pilotos.fondo/estevean3.png" alt="Victoria Hungría">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Victoria en Hungría 2021</h4>
+                        <p>Su momento de gloria: Ocon logra una victoria histórica para Alpine tras una carrera caótica y aguantando a Vettel hasta el final.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/autos/auto-oteva.png" alt="Podio Sakhir">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Podio en Sakhir 2020</h4>
+                        <p>Su primer podio en la F1 con Renault, demostrando su capacidad de estar ahí cuando las oportunidades se presentan.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/pilotos-portada/ocon.png" alt="Fichaje Alpine">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Consolidación en Alpine</h4>
+                        <p>2021: El año de su consolidación como líder del proyecto francés, renovando su contrato a largo plazo con la escudería.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
