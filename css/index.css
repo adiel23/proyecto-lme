@@ -1,0 +1,471 @@
+/* Index Specific Styles */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* VIDEO BACKGROUND HERO */
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5; /* Muy atrás para no tapar nada */
+    overflow: hidden;
+}
+
+.hero-bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8; /* Más opacidad para que se vea bien */
+    filter: brightness(40%) contrast(110%);
+    position: absolute; /* Ahora solo se queda en la cabecera, no en el cuerpo */
+    top: 0;
+    left: 0;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 20%, rgba(11, 12, 16, 0.9) 100%);
+    z-index: 1;
+}
+
+/* Ajustar partículas y grid para que no tapen el video si se desea */
+.bg-grid, .bg-particles {
+    pointer-events: none;
+}
+
+/* Eliminar el gradiente anterior que estorbaba */
+.hero-section::before {
+    display: none;
+}
+
+@keyframes pulseBg {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+h1.glitch {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    position: relative;
+    color: var(--text-white);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    animation: glitchEntrance 1s ease-out forwards;
+}
+
+h1.glitch::before, h1.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1.glitch::before {
+    left: 2px;
+    text-shadow: -1px 0 var(--f1-red);
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+h1.glitch::after {
+    left: -2px;
+    text-shadow: -1px 0 var(--neon-blue);
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch-anim 2.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% { clip: rect(10px, 9999px, 30px, 0); }
+    20% { clip: rect(80px, 9999px, 100px, 0); }
+    40% { clip: rect(5px, 9999px, 60px, 0); }
+    60% { clip: rect(50px, 9999px, 20px, 0); }
+    80% { clip: rect(120px, 9999px, 140px, 0); }
+    100% { clip: rect(30px, 9999px, 70px, 0); }
+}
+
+@keyframes glitch-anim-2 {
+    0% { clip: rect(90px, 9999px, 100px, 0); }
+    20% { clip: rect(10px, 9999px, 40px, 0); }
+    40% { clip: rect(130px, 9999px, 150px, 0); }
+    60% { clip: rect(60px, 9999px, 80px, 0); }
+    80% { clip: rect(20px, 9999px, 30px, 0); }
+    100% { clip: rect(110px, 9999px, 120px, 0); }
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--text-gray);
+    letter-spacing: 3px;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+/* Rivalry Section */
+.rivalry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+    animation: expandWidth 1s ease-out 1s forwards;
+    opacity: 0;
+}
+
+@keyframes expandWidth {
+    0% { opacity: 0; transform: scaleX(0); }
+    100% { opacity: 1; transform: scaleX(1); }
+}
+
+.driver {
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid transparent;
+}
+
+.driver:hover {
+    transform: scale(1.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+}
+
+.driver .number {
+    display: block;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.max .number { color: #1f3696; text-shadow: 0 0 20px #1f3696; } /* RB Blue */
+.lewis .number { color: #00d2be; text-shadow: 0 0 20px #00d2be; } /* Merc Teal */
+
+.driver .name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.vs {
+    font-family: 'Syncopate';
+    font-size: 2rem;
+    color: var(--f1-red);
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+.scroll-down {
+    margin-top: 80px;
+    text-decoration: none;
+    color: var(--text-white);
+    border: 1px solid var(--text-white);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down:hover {
+    background: var(--text-white);
+    color: var(--dark-bg);
+    box-shadow: 0 0 20px var(--text-white);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 100px 50px;
+    background: var(--darker-bg);
+}
+
+.section-title {
+    font-family: 'Syncopate';
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--f1-red);
+    animation: titleUnderline 3s infinite;
+}
+
+@keyframes titleUnderline {
+    0% { width: 0; left: 0; }
+    50% { width: 100%; left: 0; }
+    100% { width: 0; left: 100%; }
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -150%; }
+    100% { left: 150%; }
+}
+
+.stat-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(225, 6, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(225, 6, 0, 0.2);
+}
+
+.stat-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--f1-red);
+    font-family: 'Syncopate';
+}
+
+.stat-label {
+    margin-top: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Timeline */
+.timeline-section {
+    padding: 100px 20px;
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--text-white);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    box-shadow: 0 0 15px var(--text-white);
+}
+
+.event {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    animation: fadeInUp 1s ease-out;
+    animation-fill-mode: both;
+}
+
+.event:nth-child(1) { animation-delay: 0.5s; }
+.event:nth-child(2) { animation-delay: 1.0s; }
+.event:nth-child(3) { animation-delay: 1.5s; }
+.event:nth-child(4) { animation-delay: 2.0s; }
+.event:nth-child(5) { animation-delay: 2.5s; }
+.event:nth-child(6) { animation-delay: 3.0s; }
+
+.event::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--dark-bg);
+    border: 4px solid var(--f1-red);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.left { left: 0; }
+.right { left: 50%; }
+.left::before { content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1; right: 30px; border: medium solid white; border-width: 10px 0 10px 10px; border-color: transparent transparent transparent white; }
+.right::before { content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1; left: 30px; border: medium solid white; border-width: 10px 10px 10px 0; border-color: transparent white transparent transparent; }
+.right::after { left: -16px; }
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    color: var(--dark-bg);
+    transition: transform 0.3s;
+}
+
+.event:hover .content {
+    transform: scale(1.05);
+    background: var(--f1-red);
+    color: white;
+}
+
+.event:hover::after {
+    background-color: white;
+    transform: scale(1.5);
+}
+
+/* Standings */
+.standings-section {
+    padding: 100px 20px;
+    background: var(--darker-bg);
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.02);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+th {
+    background-color: var(--f1-red);
+    color: white;
+    font-family: 'Syncopate';
+}
+
+tr {
+    transition: background 0.3s;
+}
+
+tr:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.winner-row {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.2), transparent);
+    border-left: 5px solid var(--gold);
+}
+
+.winner-row td {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+/* Gallery Marquee */
+.gallery-section {
+    padding: 50px 0;
+    overflow: hidden;
+    background: var(--f1-red);
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.track {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+.team-name {
+    display: inline-block;
+    font-size: 4rem;
+    font-family: 'Syncopate';
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    margin: 0 50px;
+    transition: all 0.3s;
+}
+
+.team-name:hover {
+    color: white;
+    text-shadow: 0 0 20px white;
+    cursor: default;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Responsive Index */
+@media screen and (max-width: 768px) {
+    h1.glitch { font-size: 3rem; }
+    .timeline::after { left: 31px; }
+    .event { width: 100%; padding-left: 70px; padding-right: 25px; }
+    .event::before { left: 60px; border: medium solid white; border-width: 10px 10px 10px 0; border-color: transparent white transparent transparent; }
+    .left::after, .right::after { left: 15px; }
+    .right { left: 0%; }
+    .rivalry { flex-direction: column; gap: 20px; }
+}

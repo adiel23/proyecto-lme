@@ -1,0 +1,723 @@
+/* ============================== DRIVERS / PILOTOS SECTION ============================== */
+
+.drivers-section {
+    padding: 80px 50px;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.drivers-section input {
+    display: none;
+}
+
+/* HEADER */
+
+.drivers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.drivers-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: var(--text-white);
+}
+
+/* SLIDER */
+
+.drivers-wrapper {
+    overflow: hidden;
+}
+
+.drivers-row {
+    display: flex;
+    gap: 25px;
+    flex-wrap: nowrap;
+    transition: transform 0.6s ease;
+}
+
+#pos1:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(0);
+}
+
+#pos2:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-260px);
+}
+
+#pos3:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-520px);
+}
+
+#pos4:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-780px);
+}
+
+#pos5:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-1040px);
+}
+
+#pos6:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-1300px);
+}
+
+#pos7:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-1560px);
+}
+
+#pos8:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-1820px);
+}
+
+#pos9:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-2080px);
+}
+
+#pos10:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-2340px);
+}
+
+#pos11:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-2600px);
+}
+
+#pos12:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-2860px);
+}
+
+#pos13:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-3120px);
+}
+
+#pos14:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-3380px);
+}
+
+#pos15:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-3640px);
+}
+
+#pos16:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-3900px);
+}
+
+#pos17:checked ~ .drivers-wrapper .drivers-row {
+    transform: translateX(-4160px);
+}
+
+/* CARD */
+
+.driver-card {
+    min-width: 220px;
+    height: 360px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    text-decoration: none; /* Quita la línea de abajo de las letras */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.driver-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 4;
+    transition: opacity 0.35s ease;
+}
+
+.driver-card:hover {
+    transform: scale(1.07);
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.12),
+        0 0 30px color-mix(in srgb, var(--energy-color) 60%, transparent),
+        0 25px 45px rgba(0,0,0,0.7);
+}
+
+.driver-card:hover::before {
+    opacity: 1;
+    border-color: var(--energy-color);
+}
+
+.driver-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.driver-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.15)
+    );
+    z-index: 2;
+}
+
+.driver-card, 
+.driver-card:hover, 
+.driver-card:active, 
+.driver-card:focus {
+    text-decoration: none !important;
+}
+
+.driver-card h3 {
+    position: relative;
+    z-index: 3;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-white);
+    text-decoration: none !important;
+}
+
+.driver-card h3 span {
+    display: block;
+    font-weight: 700;
+    text-decoration: none !important;
+}
+
+.driver-btn {
+    display: none !important;
+}
+
+/* EQUIPOS */
+
+/* Mercedes - Hamilton, Bottas */
+.team-blue {
+    --energy-color: #394752;
+    background: linear-gradient(135deg, #43657d, #35383a);
+}
+
+/* Red Bull - Verstappen, Pérez */
+.team-azul {
+    --energy-color: #0479ff;
+    background: linear-gradient(135deg, #ffeb0d, #4e4d48);
+}
+
+/* Ferrari - Leclerc, Sainz */
+.team-red {
+    --energy-color: #ff1e1e;
+    background: linear-gradient(135deg, var(--f1-red), #600000);
+}
+
+/* McLaren - Norris, Ricciardo */
+.team-naranja {
+    --energy-color: #ff7700;
+    background: linear-gradient(135deg, #ffee00, #222);
+}
+
+/* Aston Martin - Vettel, Stroll */
+.team-green {
+    --energy-color: #459840;
+    background: linear-gradient(135deg, #615f44, #222);
+}
+
+/* Alpine - Alonso, Ocon */
+.team-rosado-azul {
+    --energy-color: #e04dc5;
+    background: linear-gradient(135deg, #4420e0, #575157);
+}
+
+/* AlphaTauri - Gasly, Tsunoda */
+.team-blanco {
+    --energy-color: #fff6fd;
+    background: linear-gradient(140deg, #ffffff, #fff7f7);
+}
+
+/* Alfa Romeo - Räikkönen, Giovinazzi */
+.team-alfa {
+    --energy-color: #900000;
+    background: linear-gradient(135deg, #900000, #ffffff);
+}
+
+/* Haas - Schumacher, Mazepin */
+.team-haas {
+    --energy-color: #e6e6e6;
+    background: linear-gradient(135deg, #ffffff, #ed1c24, #000000);
+}
+
+/* Williams - Russell, Latifi */
+.team-williams {
+    --energy-color: #00a0de;
+    background: linear-gradient(135deg, #005aff, #ffffff, #00a0de);
+}
+
+
+/* ============================= SUB PAGINA PILOTOS ============================= */
+
+.driver-pages {
+    display: none;
+    padding-top: 40px;
+}
+
+.back-btn-global {
+    display: inline-block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: var(--text-white);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.video-box {
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16/9;
+    margin: auto;
+}
+
+.video-box iframe,
+.video-box video,
+.video-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    border: none;
+    object-fit: cover;
+}
+
+#driver1:checked ~ .driver-pages,
+#driver2:checked ~ .driver-pages,
+#driver3:checked ~ .driver-pages,
+#driver4:checked ~ .driver-pages,
+#driver5:checked ~ .driver-pages,
+#driver6:checked ~ .driver-pages,
+#driver7:checked ~ .driver-pages,
+#driver8:checked ~ .driver-pages,
+#driver9:checked ~ .driver-pages,
+#driver10:checked ~ .driver-pages,
+#driver11:checked ~ .driver-pages,
+#driver12:checked ~ .driver-pages,
+#driver13:checked ~ .driver-pages,
+#driver14:checked ~ .driver-pages,
+#driver15:checked ~ .driver-pages,
+#driver16:checked ~ .driver-pages,
+#driver17:checked ~ .driver-pages,
+#driver18:checked ~ .driver-pages,
+#driver19:checked ~ .driver-pages,
+#driver20:checked ~ .driver-pages {
+    display: block;
+}
+
+#driver1:checked ~ .drivers-wrapper,
+#driver2:checked ~ .drivers-wrapper,
+#driver3:checked ~ .drivers-wrapper,
+#driver4:checked ~ .drivers-wrapper,
+#driver5:checked ~ .drivers-wrapper,
+#driver6:checked ~ .drivers-wrapper,
+#driver7:checked ~ .drivers-wrapper,
+#driver8:checked ~ .drivers-wrapper,
+#driver9:checked ~ .drivers-wrapper,
+#driver10:checked ~ .drivers-wrapper,
+#driver11:checked ~ .drivers-wrapper,
+#driver12:checked ~ .drivers-wrapper,
+#driver13:checked ~ .drivers-wrapper,
+#driver14:checked ~ .drivers-wrapper,
+#driver15:checked ~ .drivers-wrapper,
+#driver16:checked ~ .drivers-wrapper,
+#driver17:checked ~ .drivers-wrapper,
+#driver18:checked ~ .drivers-wrapper,
+#driver19:checked ~ .drivers-wrapper,
+#driver20:checked ~ .drivers-wrapper {
+    display: none;
+}
+
+.driver-page {
+    display: none;
+}
+
+#driver1:checked ~ .driver-pages .driver-page:nth-child(2),
+#driver2:checked ~ .driver-pages .driver-page:nth-child(3),
+#driver3:checked ~ .driver-pages .driver-page:nth-child(4),
+#driver4:checked ~ .driver-pages .driver-page:nth-child(5),
+#driver5:checked ~ .driver-pages .driver-page:nth-child(6),
+#driver6:checked ~ .driver-pages .driver-page:nth-child(7),
+#driver7:checked ~ .driver-pages .driver-page:nth-child(8),
+#driver8:checked ~ .driver-pages .driver-page:nth-child(9),
+#driver9:checked ~ .driver-pages .driver-page:nth-child(10),
+#driver10:checked ~ .driver-pages .driver-page:nth-child(11),
+#driver11:checked ~ .driver-pages .driver-page:nth-child(12),
+#driver12:checked ~ .driver-pages .driver-page:nth-child(13),
+#driver13:checked ~ .driver-pages .driver-page:nth-child(14),
+#driver14:checked ~ .driver-pages .driver-page:nth-child(15),
+#driver15:checked ~ .driver-pages .driver-page:nth-child(16),
+#driver16:checked ~ .driver-pages .driver-page:nth-child(17),
+#driver17:checked ~ .driver-pages .driver-page:nth-child(18),
+#driver18:checked ~ .driver-pages .driver-page:nth-child(19),
+#driver19:checked ~ .driver-pages .driver-page:nth-child(20),
+#driver20:checked ~ .driver-pages .driver-page:nth-child(21) {
+    display: block;
+}
+
+/* FLECHAS DEL SLIDER */
+
+.arrow {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 18px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.arrow:hover {
+    transform: scale(1.3);
+    background: #ff6f00;
+    box-shadow: 0 0 15px #f1920d;
+}
+
+/* Mostrar flechas correctas según el slide activo */
+.drivers-controls .arrow { display: none; }
+#pos1:checked ~ .drivers-header .next-1 { display: inline-block; }
+#pos2:checked ~ .drivers-header .prev-2,
+#pos2:checked ~ .drivers-header .next-2 { display: inline-block; }
+#pos3:checked ~ .drivers-header .prev-3,
+#pos3:checked ~ .drivers-header .next-3 { display: inline-block; }
+#pos4:checked ~ .drivers-header .prev-4,
+#pos4:checked ~ .drivers-header .next-4 { display: inline-block; }
+#pos5:checked ~ .drivers-header .prev-5,
+#pos5:checked ~ .drivers-header .next-5 { display: inline-block; }
+#pos6:checked ~ .drivers-header .prev-6,
+#pos6:checked ~ .drivers-header .next-6 { display: inline-block; }
+#pos7:checked ~ .drivers-header .prev-7,
+#pos7:checked ~ .drivers-header .next-7 { display: inline-block; }
+#pos8:checked ~ .drivers-header .prev-8,
+#pos8:checked ~ .drivers-header .next-8 { display: inline-block; }
+#pos9:checked ~ .drivers-header .prev-9,
+#pos9:checked ~ .drivers-header .next-9 { display: inline-block; }
+#pos10:checked ~ .drivers-header .prev-10,
+#pos10:checked ~ .drivers-header .next-10 { display: inline-block; }
+#pos11:checked ~ .drivers-header .prev-11,
+#pos11:checked ~ .drivers-header .next-11 { display: inline-block; }
+#pos12:checked ~ .drivers-header .prev-12,
+#pos12:checked ~ .drivers-header .next-12 { display: inline-block; }
+#pos13:checked ~ .drivers-header .prev-13,
+#pos13:checked ~ .drivers-header .next-13 { display: inline-block; }
+#pos14:checked ~ .drivers-header .prev-14,
+#pos14:checked ~ .drivers-header .next-14 { display: inline-block; }
+#pos15:checked ~ .drivers-header .prev-15,
+#pos15:checked ~ .drivers-header .next-15 { display: inline-block; }
+#pos16:checked ~ .drivers-header .prev-16,
+#pos16:checked ~ .drivers-header .next-16 { display: inline-block; }
+#pos17:checked ~ .drivers-header .prev-17 { display: inline-block; }
+
+/* BOTON VOLVER ESTETICO */
+
+.back-btn-global {
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 15px;
+    padding: 10px 18px;
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid rgba(255,255,255,0.4);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+
+.back-btn-global:hover {
+    border-color: #ff2200;
+    color: #ff9604;
+    background: rgba(0,195,255,0.08);
+}
+
+/* =============================== EXTRA INFO SUB PAGINAS PILOTOS =============================== */
+
+.driver-extra-info {
+    width: 100%;
+    padding: 90px 60px;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.driver-extra-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* IMAGEN */
+
+.driver-extra-img {
+    flex: 0 0 340px;
+    display: flex;
+}
+
+.driver-extra-img img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.08),
+        0 20px 50px rgba(0,0,0,0.75);
+    transition: all .4s ease;
+}
+
+.driver-extra-img img:hover {
+    transform: scale(1.04);
+    box-shadow:
+        0 0 25px var(--energy-color, var(--f1-red)),
+        0 25px 60px rgba(0,0,0,0.85);
+}
+
+/* TEXTO */
+
+.driver-extra-text {
+    flex: 1;
+    color: var(--text-white);
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.driver-extra-text h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2.38rem;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    background: linear-gradient(to right, #fff, var(--energy-color, var(--f1-red)));
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.driver-extra-text p:first-of-type {
+    color: var(--energy-color, var(--f1-red));
+    font-size: 0.935rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--energy-color, var(--f1-red));
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.driver-extra-text p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.9;
+    font-size: 0.89rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .driver-extra-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .driver-extra-img {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .driver-extra-img img {
+        height: 350px;
+    }
+
+    .driver-extra-text h2 {
+        font-size: 1.7rem;
+    }
+
+}
+
+/* IMAGEN DE FONDO PARA BIOGRAFÍAS */
+
+.driver-bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+    opacity: 0.35; /* Ajusta la opacidad para que no opaque el contenido */
+    filter: grayscale(30%) brightness(40%);
+}
+
+.driver-bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%);
+    pointer-events: none;
+}
+
+/* MOMENTOS DESTACADOS - SUBPÁGINAS */
+
+.driver-moments {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 60px;
+}
+
+.driver-moments h3 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5rem;
+    color: var(--text-white);
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.driver-moments h3::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--energy-color, var(--f1-red));
+}
+
+.moments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.moment-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
+}
+
+.moment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.moment-img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.moment-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.6s ease;
+}
+
+.moment-card:hover .moment-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.moment-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.moment-info h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.moment-info p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .driver-moments {
+        padding: 0 20px;
+    }
+}
+
+@keyframes fadeInUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* DRIVER HEADER */
+
+.driver-presenter {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.driver-presenter-role {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    margin-top: 10px;
+}
+
+.video-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-box video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    border-radius: inherit;
+}

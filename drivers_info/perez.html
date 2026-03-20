@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Sergio Pérez</title>
+    <link rel="stylesheet" href="../css/drivers.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page { display: block !important; opacity: 1 !important; visibility: visible !important; position: relative; transform: none !important; max-width: 1200px; margin: 0 auto 30px; background: transparent !important; }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover { background: var(--f1-red); border-color: var(--f1-red); box-shadow: 0 0 20px var(--f1-red); }
+    </style>
+</head>
+<body class="team-azul">
+    <!-- Imagen de fondo que cubre toda la pantalla -->
+    <img src="../img/pilotos-portada/perez.png" class="driver-bg-image" alt="Background">
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        <div class="driver-page team-azul">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">Sergio Pérez</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+            <div class="video-box">
+                <video controls loop><source src="../vid/perez.mp4" type="video/mp4"></video>
+            </div>
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/perez.png">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>Sergio Pérez</h2>
+                        <p>Análisis Competitivo e Impacto Estratégico de Sergio Pérez en la Fórmula 1</p>
+                        <p>Sergio "Checo" Pérez Rivera inició su carrera en el karting mexicano (1987), desarrollándose como piloto técnico de precisión en categorías inferiores. Su ascenso a la Fórmula 1 en 2011 con Sauber marcó el inicio de una trayectoria caracterizada por habilidades defensivas superiores y gestión táctica bajo presión. Tras su paso por McLaren y Force India (2012-2020), donde acumuló su primera victoria en el Gran Premio de Estambul, Pérez se consolidó como referente de resistencia competitiva. Su incorporación a Red Bull Racing en 2021 le permitió participar como piloto de apoyo estructural durante el duelo entre Verstappen y Hamilton, demostrando madurez estratégica y experiencia de parrilla. Con 25 victorias en su carrera profesional y más de 250 podios potenciales, Pérez representa el paradigma del piloto latinoamericano excepcional en el automovilismo mundial contemporáneo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/pilotos-portada/2020-perz.png" alt="Victoria Sakhir">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Victoria en Sakhir 2020</h4>
+                        <p>De último a primero: Checo logra su primera victoria en F1 en una remontada histórica que le valió el asiento en Red Bull.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/pilotos-portada/checho perez.png" alt="Defensa Hamilton">
+                    </div>
+                    <div class="moment-info">
+                        <h4>"Checo is a Legend"</h4>
+                        <p>Abu Dhabi 2021: Una defensa magistral ante Hamilton que fue clave para que su compañero lograra el campeonato mundial.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/pilotos.fondo/carro-perz.png" alt="Victoria Bakú">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Triunfo en Bakú 2021</h4>
+                        <p>Su primera victoria con Red Bull Racing, demostrando su temple en un final de carrera caótico y emocionante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+

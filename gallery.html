@@ -3,74 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería - F1 2021</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="gallery.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Galería F1 2021</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="main-nav">
-        <a href="index.html" class="nav-logo">F1 <span>2021</span></a>
-        <div class="menu-toggle">
-            <span></span><span></span><span></span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="drivers.html">Pilotos</a></li>
-            <li><a href="teams.html">Escuderías</a></li>
-            <li><a href="races.html">Carreras</a></li>
-            <li><a href="tech.html">Tech</a></li>
-            <li><a href="gallery.html" class="active">Galería</a></li>
-            <li><a href="creators.html">Creadores</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="bg-grid"></div>
-    <div class="bg-particles">
-        <span></span><span></span><span></span><span></span><span></span><span></span>
+
+<nav class="main-nav">
+    <a href="index.html" class="nav-logo">F1 <span>2021</span></a>
+    <div class="menu-toggle">
+        <span></span><span></span><span></span>
     </div>
-
-    <header >
-        
-    </header>
-
-  
-    </main>
-
-    <footer class="main-footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>CREADORES</h3>
-                <ul class="footer-list">
-                    <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
-                    <li><span class="creator-badge">Design</span> Azael</li>
-                    <li><span class="creator-badge">Content</span> Arthur</li>
-                    <li><span class="creator-badge">Creator</span> Victor</li>
-                </ul>
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="drivers.html">Pilotos</a></li>
+        <li><a href="teams.html">Escuderías</a></li>
+        <li><a href="races.html">Carreras</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li>
+            <a href="gallery.html" class="active">Galería</a>
+            <div class="sub-nav">
+                <a href="#drivers">Pilotos</a>
+                <a href="#cars">Autos</a>
+                <a href="#helmets">Cascos</a>
+                <a href="#gp">Grandes Premios</a>
             </div>
-            <div class="footer-col">
-                <h3>LEGAL</h3>
-                <p>&copy; 2026 F1 2021 Tribute.</p>
-                <p class="disclaimer">Este sitio es un proyecto de fans. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+        </li>
+        <li><a href="creators.html">Creadores</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<main class="gallery-section">
+
+    <!-- ================= PILOTOS ================= -->
+    <section class="gallery-row" id="drivers">
+        <h3 class="gallery-section-title">Pilotos de la Parrilla</h3>
+        <div class="gallery-separator"></div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" id="p1"><a href="#" class="close-btn">✕</a><img src="img/galaria/piloto2.png"><div class="gallery-caption">Charles leclerc</div><a href="#p1" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p2"><a href="#" class="close-btn">✕</a><img src="img/galaria/lewis.jpeg"><div class="gallery-caption"> Lewis Hamilton</div><a href="#p2" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p3"><a href="#" class="close-btn">✕</a><img src="img/galaria/piloto3.png"><div class="gallery-caption">Lewis Hamilton</div><a href="#p3" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p4"><a href="#" class="close-btn">✕</a><img src="img/galaria/max.jpeg"><div class="gallery-caption">Max Verstappen - Red Bull</div><a href="#p4" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p5"><a href="#" class="close-btn">✕</a><img src="img/galaria/piloto4.png"><div class="gallery-caption">Checo perez</div><a href="#p5" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p6"><a href="#" class="close-btn">✕</a><img src="img/galaria/pilotos1.png"><div class="gallery-caption">Max Verstappen</div><a href="#p6" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p7"><a href="#" class="close-btn">✕</a><img src="img/galaria/alonso.cameon.png"><div class="gallery-caption">Fernando Alonso</div><a href="#p7" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p8"><a href="#" class="close-btn">✕</a><img src="img/pilotos-portada/latifi.png"><div class="gallery-caption">Nicholas Latifi.</div><a href="#p8" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p9"><a href="#" class="close-btn">✕</a><img src="img/galaria/MIKC.png"><div class="gallery-caption">Nikita Mazepin.</div><a href="#p9" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p10"><a href="#" class="close-btn">✕</a><img src="img/FOTOS-EPICAS/max.png"><div class="gallery-caption">Max Verstappen</div><a href="#p10" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p11"><a href="#" class="close-btn">✕</a><img src="img/galaria/pilotos.fondo/verde2-piloto.png"><div class="gallery-caption">Lance Stroll,</div><a href="#p11" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p12"><a href="#" class="close-btn">✕</a><img src="img/galaria/ferrari.png"><div class="gallery-caption">Carlos Sainz </div><a href="#p12" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p13"><a href="#" class="close-btn">✕</a><img src="img/galaria/brasil.lewia.png"><div class="gallery-caption">Lewis Hamilton - Brasil GP</div><a href="#p13" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p14"><a href="#" class="close-btn">✕</a><img src="img/galaria/campeon.lewia.png"><div class="gallery-caption">Lewis Hamilton - Campeón</div><a href="#p14" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p15"><a href="#" class="close-btn">✕</a><img src="img/galaria/iloa.png"><div class="gallery-caption">F1 Driver</div><a href="#p15" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p16"><a href="#" class="close-btn">✕</a><img src="img/galaria/segndo-1.png"><div class="gallery-caption">Podio F1</div><a href="#p16" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p17"><a href="#" class="close-btn">✕</a><img src="img/galaria/antonio2.png"><div class="gallery-caption">Antonio Giovinazzi</div><a href="#p17" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p18"><a href="#" class="close-btn">✕</a><img src="img/galaria/pilotos.fondo/chino.png"><div class="gallery-caption">Guanyu Zhou</div><a href="#p18" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p19"><a href="#" class="close-btn">✕</a><img src="img/galaria/pilotos.fondo/piery.png"><div class="gallery-caption">Pierre Gasly - AlphaTauri</div><a href="#p19" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p20"><a href="#" class="close-btn">✕</a><img src="img/FOTOS-EPICAS/lewa-premio.png"><div class="gallery-caption">Sebastian Vettel</div><a href="#p20" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p21"><a href="#" class="close-btn">✕</a><img src="img/FOTOS-EPICAS/norris.png"><div class="gallery-caption">Daniel Ricciardo</div><a href="#p21" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p22"><a href="#" class="close-btn">✕</a><img src="img/galaria/pilotos.fondo/estevean3.png"><div class="gallery-caption">Esteban Ocon</div><a href="#p22" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p23"><a href="#" class="close-btn">✕</a><img src="img/galaria/pilotos.fondo/lando1.png"><div class="gallery-caption">Lando Norris</div><a href="#p23" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p24"><a href="#" class="close-btn">✕</a><img src="img/FOTOS-EPICAS/perez.png"><div class="gallery-caption">George Russell</div><a href="#p24" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="p25"><a href="#" class="close-btn">✕</a><img src="img/FOTOS-EPICAS/image.png"><div class="gallery-caption">Sebastian Vettel - Aston Martin</div><a href="#p25" class="fullscreen-btn">⤢</a></div>
+        </div>
+    </section>
+
+    <!-- ================= AUTOS ================= -->
+    <section class="gallery-row" id="cars">
+        <h3 class="gallery-section-title">Monoplazas 2021</h3>
+        <div class="gallery-separator"></div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" id="c1"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/9-auto.png"><div class="gallery-caption">F1 Car 2021</div><a href="#c1" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c2"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/auto-blanco2.png"><div class="gallery-caption">AlphaTauri AT02</div><a href="#c2" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c3"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/auto-de-latefi-azul.png"><div class="gallery-caption">Williams FW43B</div><a href="#c3" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c4"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/auto-oteva.png"><div class="gallery-caption">Aston Martin AMR21</div><a href="#c4" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c5"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/auto1.png"><div class="gallery-caption">Ferrari SF21</div><a href="#c5" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c6"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/auto2.png"><div class="gallery-caption">Mercedes W12</div><a href="#c6" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c7"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/auto3.png"><div class="gallery-caption">Red Bull RB16B</div><a href="#c7" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c8"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/auto4.png"><div class="gallery-caption">McLaren MCL35M</div><a href="#c8" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c9"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/blanco-crad-2.png"><div class="gallery-caption">F1 Car Details</div><a href="#c9" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c10"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/blnco-auto.png"><div class="gallery-caption">F1 Car Side View</div><a href="#c10" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c11"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/card-kimi1.png"><div class="gallery-caption">Alfa Romeo C41</div><a href="#c11" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c12"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/carro.png"><div class="gallery-caption">F1 Racing Car</div><a href="#c12" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c13"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/ferrari2.png"><div class="gallery-caption">Ferrari SF21 - Front</div><a href="#c13" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c15"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/mercedes-2a.png"><div class="gallery-caption">Mercedes W12 Black</div><a href="#c15" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c16"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/mick-auto.png"><div class="gallery-caption">Haas VF-21</div><a href="#c16" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c17"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/mlclaren1.png"><div class="gallery-caption">McLaren MCL35M - Orange</div><a href="#c17" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c18"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/mlcren2.png"><div class="gallery-caption">McLaren MCL35M - Gulf Livery</div><a href="#c18" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c19"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/verde2.png"><div class="gallery-caption">Aston Martin AMR21</div><a href="#c19" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c20"><a href="#" class="close-btn">✕</a><img src="img/galaria/carro-azul-1.jpeg"><div class="gallery-caption">Alpine A521</div><a href="#c20" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c21"><a href="#" class="close-btn">✕</a><img src="img/galaria/alonso2021.png"><div class="gallery-caption">Ferrari Pit Stop</div><a href="#c21" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c22"><a href="#" class="close-btn">✕</a><img src="img/galaria/pilotos.fondo/carro-perz.png"><div class="gallery-caption">Red Bull - Checo Pérez</div><a href="#c22" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c25"><a href="#" class="close-btn">✕</a><img src="img/galaria/pilotos.fondo/card-azul2.png"><div class="gallery-caption">Alpine Detail</div><a href="#c25" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c22"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/image.png"><div class="gallery-caption">Red Bull - Checo Pérez</div><a href="#c22" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="c25"><a href="#" class="close-btn">✕</a><img src="img/galaria/autos/mlclaren1.png"><div class="gallery-caption">Alpine Detail</div><a href="#c25" class="fullscreen-btn">⤢</a></div>
+        </div>
+    </section>
+
+    <!-- ================= CASCOS ================= -->
+    <section class="gallery-row" id="helmets">
+        <h3 class="gallery-section-title">Cascos de Pilotos</h3>
+        <div class="gallery-separator"></div>
+        <div class="gallery-grid">
+            <div class="gallery-item" id="h1"><a href="#" class="close-btn">✕</a><img src="img/galaria/casco/azul.jpeg"><div class="gallery-caption">Casco Azul - F1</div><a href="#h1" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="h2"><a href="#" class="close-btn">✕</a><img src="img/galaria/casco/blanco.jpeg"><div class="gallery-caption">Casco Blanco - F1</div><a href="#h2" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="h3"><a href="#" class="close-btn">✕</a><img src="img/galaria/casco/casco-azul-latefi.png"><div class="gallery-caption">Casco Nicholas Latifi</div><a href="#h3" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="h4"><a href="#" class="close-btn">✕</a><img src="img/CASCO.png"><div class="gallery-caption">Casco Azul - F1</div><a href="#h4" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="h5"><a href="#" class="close-btn">✕</a><img src="img/FERARI.png"><div class="gallery-caption">Casco Ferrari</div><a href="#h5" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="h6"><a href="#" class="close-btn">✕</a><img src="img/mlcren3.png"><div class="gallery-caption">Casco McLaren</div><a href="#h6" class="fullscreen-btn">⤢</a></div>
+        </div>
+    </section>
+
+    <!-- ================= GRANDES PREMIOS ================= -->
+    <section class="gallery-row" id="gp">
+        <h3 class="gallery-section-title">EPICO</h3>
+        <div class="gallery-separator"></div>
+        <div class="gallery-grid">
+            <div class="gallery-item" id="g1"><a href="#" class="close-btn">✕</a><img src="img/abu-dabi.webp"><div class="gallery-caption">GP de Abu Dabi</div><a href="#g1" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g2"><a href="#" class="close-btn">✕</a><img src="img/arabia-saudita.jpg"><div class="gallery-caption">GP de Arabia Saudita</div><a href="#g2" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g3"><a href="#" class="close-btn">✕</a><img src="img/austria.jpg"><div class="gallery-caption">GP de Austria</div><a href="#g3" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g4"><a href="#" class="close-btn">✕</a><img src="img/azerbaiyan.avif"><div class="gallery-caption">GP de Azerbaiyán</div><a href="#g4" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g5"><a href="#" class="close-btn">✕</a><img src="img/bahrein.avif"><div class="gallery-caption">GP de Bahrein</div><a href="#g5" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g6"><a href="#" class="close-btn">✕</a><img src="img/belgica.jpeg"><div class="gallery-caption">GP de Bélgica</div><a href="#g6" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g7"><a href="#" class="close-btn">✕</a><img src="img/catar.jpg"><div class="gallery-caption">GP de Catar</div><a href="#g7" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g8"><a href="#" class="close-btn">✕</a><img src="img/emilia-romagna.webp"><div class="gallery-caption">GP de Emilia-Romaña</div><a href="#g8" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g9"><a href="#" class="close-btn">✕</a><img src="img/espana.avif"><div class="gallery-caption">GP de España</div><a href="#g9" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g10"><a href="#" class="close-btn">✕</a><img src="img/estados-unidos.jpg"><div class="gallery-caption">GP de Estados Unidos</div><a href="#g10" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g11"><a href="#" class="close-btn">✕</a><img src="img/estiria.avif"><div class="gallery-caption">GP de Estiria</div><a href="#g11" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g12"><a href="#" class="close-btn">✕</a><img src="img/francia.avif"><div class="gallery-caption">GP de Francia</div><a href="#g12" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g13"><a href="#" class="close-btn">✕</a><img src="img/gran-bretana.jpg"><div class="gallery-caption">GP de Gran Bretaña</div><a href="#g13" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g14"><a href="#" class="close-btn">✕</a><img src="img/hungria.avif"><div class="gallery-caption">GP de Hungría</div><a href="#g14" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g15"><a href="#" class="close-btn">✕</a><img src="img/italia.jpg"><div class="gallery-caption">GP de Italia</div><a href="#g15" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g16"><a href="#" class="close-btn">✕</a><img src="img/mexico.jpg"><div class="gallery-caption">GP de México</div><a href="#g16" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g17"><a href="#" class="close-btn">✕</a><img src="img/monaco.jpg"><div class="gallery-caption">GP de Mónaco</div><a href="#g17" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g18"><a href="#" class="close-btn">✕</a><img src="img/monza.webp"><div class="gallery-caption">Autódromo de Monza</div><a href="#g18" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g19"><a href="#" class="close-btn">✕</a><img src="img/paises-bajos.webp"><div class="gallery-caption">GP de Países Bajos</div><a href="#g19" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g20"><a href="#" class="close-btn">✕</a><img src="img/portugal.avif"><div class="gallery-caption">GP de Portugal</div><a href="#g20" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g21"><a href="#" class="close-btn">✕</a><img src="img/rusia.webp"><div class="gallery-caption">GP de Rusia</div><a href="#g21" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g22"><a href="#" class="close-btn">✕</a><img src="img/sao-paulo.jpg"><div class="gallery-caption">GP de Sao Paulo</div><a href="#g22" class="fullscreen-btn">⤢</a></div>
+            <div class="gallery-item" id="g23"><a href="#" class="close-btn">✕</a><img src="img/turquia.jpg"><div class="gallery-caption">GP de Turquía</div><a href="#g23" class="fullscreen-btn">⤢</a></div>
+            
+          
+        </div>
+    </section>
+
+</main>
+
+<footer class="main-footer">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h3>CREADORES</h3>
+            <ul class="footer-list">
+                <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                <li><span class="creator-badge">Design</span> Asael</li>
+                <li><span class="creator-badge">Content</span> Arthur</li>
+                <li><span class="creator-badge">Creator</span> Anderson</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>LEGAL</h3>
+            <p>&copy; 2026 F1 2021 Tribute.</p>
+            <p class="disclaimer">Este sitio es un proyecto de Cátedra. No está afiliado con Fórmula 1, FIA o cualquier equipo.</p>
+        </div>
+        <div class="footer-col">
+            <h3>CONÉCTATE</h3>
+            <div class="social-links">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">TikTok</a>
             </div>
-            <div class="footer-col">
-                <h3>CONÉCTATE</h3>
-                <div class="social-links">
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">TikTok</a>
-                </div>
-                <div class="newsletter">
-                    <input type="email" placeholder="Tu email...">
-                    <button>→</button>
-                </div>
+            <div class="newsletter">
+                <input type="email" placeholder="Tu email...">
+                <button>→</button>
             </div>
         </div>
-        <div class="footer-bar">
-            <div class="pulse-dot"></div>
-            <p>Hecho con <span style="color: var(--f1-red);">❤</span> y velocidad.</p>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-bar">
+        <div class="pulse-dot"></div>
+        <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+    </div>
+</footer>
+
 </body>
 </html>
+    

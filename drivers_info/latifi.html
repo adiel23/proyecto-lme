@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Nicholas Latifi</title>
+    <link rel="stylesheet" href="../css/drivers.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page { display: block !important; opacity: 1 !important; visibility: visible !important; position: relative; transform: none !important; max-width: 1200px; margin: 0 auto 30px; background: transparent !important; }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover { background: var(--f1-red); border-color: var(--f1-red); box-shadow: 0 0 20px var(--f1-red); }
+    </style>
+</head>
+<body class="team-williams">
+    <!-- Imagen de fondo que cubre toda la pantalla -->
+    <img src="../img/pilotos-portada/latifi.png" class="driver-bg-image" alt="Background">
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        <div class="driver-page team-williams">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">Nicholas Latifi</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+            <div class="video-box">
+                <img src="../img/galaria/ultimo-piloto-latefdi12.jpeg" alt="Nicholas Latifi Presentation">
+            </div>
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/latifi.png">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>Nicholas Latifi</h2>
+                        <p>Consistencia Táctica y Aporte Técnico de Nicholas Latifi en la Recuperación de Williams</p>
+                        <p>Nicholas Latifi inició su carrera competitiva en el karting canadiense, consolidando su técnica a través de varias temporadas en la Fórmula 2 donde logró el subcampeonato en 2019. Su debut en Fórmula 1 en 2020 coincidió con un período de reestructuración profunda en Williams Racing. Durante la temporada 2021, Latifi demostró ser un piloto de gran fiabilidad, logrando sus primeros puntos en la categoría en el caótico GP de Hungría y manteniendo una consistencia notable en el ritmo de carrera. Su enfoque se ha centrado en el trabajo de puesta a punto y en proporcionar un feedback técnico detallado que ha sido crucial para la evolución del chasis Williams. Latifi representa la perseverancia y el trabajo en equipo, elementos esenciales para el progreso de una escudería en la competitiva zona media de la parrilla mundial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/casco/casco-azul-latefi.png" alt="Puntos Hungría">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Primeros Puntos en F1</h4>
+                        <p>Hungría 2021: Latifi logra sus primeros puntos tras una carrera inteligente, cruzando la meta en el top 10.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/autos/auto-de-latefi-azul.png" alt="Debut Williams">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Debut con Williams</h4>
+                        <p>2020: Su llegada a la máxima categoría, convirtiéndose en el único piloto canadiense en la parrilla en ese momento.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/pilotos-portada/latifi.png" alt="Feedback Técnico">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Feedback de Desarrollo</h4>
+                        <p>2021: Su aporte fundamental en el desarrollo del chasis, ayudando al equipo Williams a recuperar competitividad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+

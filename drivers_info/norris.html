@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía - Lando Norris</title>
+    <link rel="stylesheet" href="../css/drivers.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body { 
+            background: #000 !important; 
+            margin: 0; 
+            padding: 40px 20px 0; 
+            color: #fff; 
+            font-family: 'Titillium Web', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-footer {
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: auto;
+        }
+        .moments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 20px;
+        }
+        .moment-card {
+            min-width: 0 !important;
+        }
+        .moment-img-wrapper {
+            height: 180px !important;
+        }
+        .driver-page { display: block !important; opacity: 1 !important; visibility: visible !important; position: relative; transform: none !important; max-width: 1200px; margin: 0 auto 30px; background: transparent !important; }
+        .back-btn-link { text-decoration: none; display: inline-block; width: fit-content; margin-bottom: 30px; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 8px; transition: 0.3s; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn-link:hover { background: var(--f1-red); border-color: var(--f1-red); box-shadow: 0 0 20px var(--f1-red); }
+    </style>
+</head>
+<body class="team-naranja">
+    <!-- Imagen de fondo que cubre toda la pantalla -->
+    <img src="../img/pilotos-portada/norris.jpeg" class="driver-bg-image" alt="Background">
+    <div class="driver-bg-overlay"></div>
+
+    <div class="container">
+        <a href="../drivers.html" class="back-btn-link">← Volver a la Parrilla</a>
+        <div class="driver-page team-naranja">
+            <div class="driver-presenter">
+                <h1 class="driver-presenter-name">Lando Norris</h1>
+                <p class="driver-presenter-role">DRIVER PRESENTATION</p>
+            </div>
+            <div class="video-box">
+                <video controls loop><source src="../vid/lando.mp4" type="video/mp4"></video>
+            </div>
+            <div class="driver-extra-info">
+                <div class="driver-extra-container">
+                    <div class="driver-extra-img">
+                        <img src="../img/pilotos-portada/norris.jpeg">
+                    </div>
+                    <div class="driver-extra-text">
+                        <h2>Lando Norris</h2>
+                        <p>Precosidad Técnica y Potencial de Lando Norris como Generación Emergente de Fórmula 1</p>
+                        <p>Lando Norris inició su formación en el prestigioso karting británico (1999), demostrando aptitudes excepcionales que lo diferenciaron entre sus contemporáneos. Su paso rápido a través de F4, F3 y F2 evidenció un dominio técnico y mental precoz, obteniendo el campeonato de F3 y consolidándose como prospecto de élite para categorías superiores. Su debut en Fórmula 1 con McLaren-Renault (2019) a los 19 years posicionó a Norris como joven piloto de potencial excepcional, mostrando velocidad pura y adaptación acelerada a la complejidad de la F1. Durante el ciclo 2021, Norris acumuló experiencia estratégica y técnica consistente, participando activamente en el desarrollo competitivo de McLaren durante su fase de recuperación. Su capacidad de precisión en clasificación, gestión de neumáticos y conocimiento técnico del monoplaza lo proyectan como posible futuro campeón mundial durante la próxima década de la categoría.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Momentos Destacados -->
+        <div class="driver-moments">
+            <h3>MOMENTOS DESTACADOS</h3>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/pilotos.fondo/lando1.png" alt="Podio Austria">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Primer Podio en F1</h4>
+                        <p>Austria 2020: En una última vuelta frenética, Norris logra su primer podio y se convierte en uno de los más jóvenes en lograrlo.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/galaria/autos/mlclaren1.png" alt="Pole Rusia">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Pole Position en Rusia</h4>
+                        <p>2021: Norris asombra con una pole impecable bajo condiciones cambiantes, confirmando su estatus de estrella.</p>
+                    </div>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-img-wrapper">
+                        <img src="../img/pilotos-portada/norris.jpeg" alt="P2 Monza">
+                    </div>
+                    <div class="moment-info">
+                        <h4>Doblete en Monza 2021</h4>
+                        <p>Lando asegura la segunda posición para completar un 1-2 histórico de McLaren, su mejor resultado hasta la fecha.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CREADORES</h3>
+                    <ul class="footer-list">
+                        <li><span class="creator-badge">Dev</span> Jimmy Peña</li>
+                        <li><span class="creator-badge">Design</span> Asael</li>
+                        <li><span class="creator-badge">Content</span> Arthur</li>
+                        <li><span class="creator-badge">Creator</span> Victor</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>LEGAL</h3>
+                    <p>&copy; 2026 F1 2021 Tribute.</p>
+                    <p class="disclaimer">Este sitio es un proyecto de Catedra. No está afiliado con Formula 1, FIA o cualquier equipo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>CONÉCTATE</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email...">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="pulse-dot"></div>
+                <p>Hecho con <span style="color: var(--f1-red);">❤</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
