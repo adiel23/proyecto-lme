@@ -326,6 +326,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        padding-top: 72px;
+    }
+
+    .main-nav {
+        padding: 18px 22px;
+    }
+
     .nav-links {
         display: none;
         position: absolute;
@@ -344,5 +352,22 @@ body {
 
     .menu-toggle {
         display: flex;
+    }
+
+    .page-header {
+        padding: 70px 20px 35px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        overflow-wrap: anywhere;
+    }
+
+    .main-footer {
+        padding: 55px 22px 25px;
+    }
+
+    .newsletter {
+        flex-direction: column;
     }
 }

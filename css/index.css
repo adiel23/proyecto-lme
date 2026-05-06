@@ -389,6 +389,15 @@ table {
     background: rgba(255,255,255,0.02);
 }
 
+caption {
+    caption-side: top;
+    color: var(--text-white);
+    font-family: 'Syncopate', sans-serif;
+    letter-spacing: 1px;
+    padding: 18px;
+    text-align: center;
+}
+
 th, td {
     padding: 15px;
     text-align: left;
@@ -399,6 +408,20 @@ th {
     background-color: var(--f1-red);
     color: white;
     font-family: 'Syncopate';
+}
+
+.standings-table {
+    margin-bottom: 0;
+}
+
+.standings-table > :not(caption) > * > * {
+    background-color: transparent;
+    color: var(--text-white);
+}
+
+.table-super-title {
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 tr {
@@ -417,6 +440,148 @@ tr:hover {
 .winner-row td {
     color: var(--gold);
     font-weight: bold;
+}
+
+tfoot td {
+    background: rgba(225, 6, 0, 0.18);
+    font-weight: 700;
+}
+
+/* Resources, audio and PDF */
+.resource-section,
+.story-section,
+.image-carousel-section {
+    padding: 100px 50px;
+}
+
+.resource-title {
+    left: 0;
+    transform: none;
+    display: block;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.resource-title::after {
+    left: 0;
+}
+
+.resource-card,
+.audio-card {
+    min-height: 260px;
+    padding: 35px;
+    border-radius: 18px;
+    background:
+        linear-gradient(135deg, rgba(225, 6, 0, 0.18), transparent),
+        rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.resource-card:hover,
+.audio-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(225, 6, 0, 0.6);
+}
+
+.resource-card h4,
+.audio-card h4 {
+    font-family: 'Syncopate', sans-serif;
+    margin-bottom: 18px;
+}
+
+.resource-card p,
+.audio-card p {
+    color: var(--text-gray);
+}
+
+.download-link {
+    margin-top: 12px;
+    border-radius: 999px;
+    font-family: 'Syncopate', sans-serif;
+    letter-spacing: 1px;
+}
+
+.audio-card audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Multicolumn text */
+.story-section {
+    background: var(--darker-bg);
+}
+
+.multi-column-story {
+    max-width: 1100px;
+    margin: 0 auto;
+    columns: 3 260px;
+    column-gap: 42px;
+    column-rule: 1px solid rgba(225, 6, 0, 0.35);
+    color: var(--text-gray);
+    text-align: justify;
+}
+
+.multi-column-story p {
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+/* CSS-only image carousel */
+.image-carousel-section {
+    overflow: hidden;
+}
+
+.css-carousel {
+    max-width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.css-carousel-track {
+    display: flex;
+    width: 400%;
+    animation: imageCarousel 18s infinite ease-in-out;
+}
+
+.carousel-slide {
+    position: relative;
+    width: 25%;
+    margin: 0;
+    min-height: 480px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    object-fit: cover;
+    filter: brightness(0.75) saturate(1.1);
+}
+
+.carousel-slide figcaption {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    padding: 18px 22px;
+    border-left: 4px solid var(--f1-red);
+    background: rgba(0, 0, 0, 0.72);
+    color: var(--text-white);
+    font-family: 'Syncopate', sans-serif;
+    letter-spacing: 1px;
+}
+
+@keyframes imageCarousel {
+    0%, 18% { transform: translateX(0); }
+    25%, 43% { transform: translateX(-25%); }
+    50%, 68% { transform: translateX(-50%); }
+    75%, 93% { transform: translateX(-75%); }
+    100% { transform: translateX(0); }
 }
 
 /* Gallery Marquee */
@@ -462,10 +627,35 @@ tr:hover {
 /* Responsive Index */
 @media screen and (max-width: 768px) {
     h1.glitch { font-size: 3rem; }
+    .subtitle { font-size: 1rem; }
     .timeline::after { left: 31px; }
     .event { width: 100%; padding-left: 70px; padding-right: 25px; }
     .event::before { left: 60px; border: medium solid white; border-width: 10px 10px 10px 0; border-color: transparent white transparent transparent; }
     .left::after, .right::after { left: 15px; }
     .right { left: 0%; }
     .rivalry { flex-direction: column; gap: 20px; }
+    .resource-section,
+    .story-section,
+    .image-carousel-section {
+        padding: 70px 20px;
+    }
+    .section-title {
+        font-size: 1.55rem;
+        width: max-content;
+        max-width: 90vw;
+    }
+    .carousel-slide,
+    .carousel-slide img {
+        min-height: 340px;
+    }
+    .carousel-slide figcaption {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        font-size: 0.78rem;
+    }
+    .team-name {
+        font-size: 2.2rem;
+        margin: 0 24px;
+    }
 }
